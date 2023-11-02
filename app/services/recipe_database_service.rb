@@ -9,6 +9,6 @@ class RecipeDatabaseService
   end
 
   def recipes_by_keyword(search)
-    get_url("/api/v1/search?ingredients=#{search}")
+    get_url("/api/v1/search?q=#{search}")
   end
 end

@@ -2,7 +2,7 @@ require "rails_helper"
 
 RSpec.describe "Recipes Index Page" do
   it 'displays a list of recipes', :vcr do
-    visit "/dashboard"
+    visit "/"
 
     fill_in :search, with: "Potato"
     click_button "Search"
