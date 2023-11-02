@@ -7,6 +7,7 @@ Rails.application.routes.draw do
   root "welcome#index"
   get "/login", to: "users#login"
   get "/register", to: "users#register"
+  get "/logout", to: "users#logout"
   
   resources :users, only: [:create]
 end
