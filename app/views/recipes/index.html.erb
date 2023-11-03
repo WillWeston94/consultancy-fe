@@ -7,11 +7,15 @@
   <div class = "row" >
     <% @recipe_facade.recipes.each do |recipe| %>
       <div class ="col-lg-4 col-md-6 col-sm-12">
-        <div class = "recipe-card">
-          <%= link_to recipe_path(recipe) do %>
-            <img src="<%= recipe.img_src %>" alt="<%= recipe.name %>" class="recipe-image">
-          <% end %>
-          <h3><%= link_to recipe.name, recipe_path(recipe) %></h3>
+        <div class = "card h-100">
+          <div class = "card recipe-card">
+            <%= link_to recipe_path(recipe) do %>
+              <img src="<%= recipe.img_src %>" alt="<%= recipe.name %>" class="card-img-top">
+            <% end %>
+            <div class="card-body">
+              <h5 class="card-title"><%= link_to recipe.name, recipe_path(recipe) %></h5>
+            </div>
+          </div>
         </div>
       </div>
     <% end %>
