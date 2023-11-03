@@ -10,5 +10,5 @@ Rails.application.routes.draw do
   get "/logout", to: "users#logout"
   
   resources :users, only: [:create]
-  resources :recipes, only: [:index]
+  resources :recipes, only: [:index, :show]
 end
