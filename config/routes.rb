@@ -11,4 +11,5 @@ Rails.application.routes.draw do
   
   resources :users, only: [:create]
   resources :recipes, only: [:index, :show]
+  resources :recipes_advanced_search, only: [:index]
 end

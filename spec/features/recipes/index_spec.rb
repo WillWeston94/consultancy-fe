@@ -16,14 +16,14 @@ RSpec.describe "Recipes Index Page" do
     click_button "Search"
 
     expect(page.status_code).to eq 200
-    #Intresting, it defaults to 10 results.  This will need to be refactored to properly display all recipes
+    #Interesting, it defaults to 10 results.  This will need to be refactored to properly display all recipes
     expect(current_path).to eq(recipes_path)
     expect(page).to have_content("Potato Leek Soup")
     expect(page).to have_content("Potato Chip Brownies")
   end
 
   it "displays recipes, even when the user doesn't enter any ingredients into the search bar", :vcr do
-    visit ""
+    visit "/"
 
     click_button "Search"
 

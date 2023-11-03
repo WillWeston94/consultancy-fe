@@ -18,7 +18,7 @@
     <% end %>
     <nav class="navbar navbar-expand-md navbar-dark bg-primary">
       <div class="collapse navbar-collapse" id="navbarColor01">
-    <%= form_with url: recipes_path, method: :get, local: true, data: {turbo: false} do |f| %>
+    <%= form_with url: recipes_path, method: :get, local: true, data: {turbo: false}, class: "header-search-form" do |f| %>
       <%= f.text_field :search, placeholder: "Search by Ingredients..." %>
       <%= f.submit "Search" %>
     <% end %>
