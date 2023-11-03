@@ -1,0 +1,63 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://localhost:3000/api/v1/search?q=
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.11
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - '0'
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Type:
+      - application/json; charset=utf-8
+      Vary:
+      - Origin
+      Etag:
+      - W/"10c77c3bebbc541dda05ff996a7411e3"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 7d30ce0a-12f5-4e76-b432-846ec1b258f2
+      X-Runtime:
+      - '0.561019'
+      Server-Timing:
+      - start_processing.action_controller;dur=0.05, process_action.action_controller;dur=558.56
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"data":[{"id":"782585","type":"searched_recipe","attributes":{"name":"Cannellini
+        Bean and Asparagus Salad with Mushrooms","img_src":"https://spoonacular.com/recipeImages/782585-312x231.jpg"}},{"id":"716426","type":"searched_recipe","attributes":{"name":"Cauliflower,
+        Brown Rice, and Vegetable Fried Rice","img_src":"https://spoonacular.com/recipeImages/716426-312x231.jpg"}},{"id":"715497","type":"searched_recipe","attributes":{"name":"Berry
+        Banana Breakfast Smoothie","img_src":"https://spoonacular.com/recipeImages/715497-312x231.jpg"}},{"id":"715415","type":"searched_recipe","attributes":{"name":"Red
+        Lentil Soup with Chicken and Turnips","img_src":"https://spoonacular.com/recipeImages/715415-312x231.jpg"}},{"id":"716406","type":"searched_recipe","attributes":{"name":"Asparagus
+        and Pea Soup: Real Convenience Food","img_src":"https://spoonacular.com/recipeImages/716406-312x231.jpg"}},{"id":"644387","type":"searched_recipe","attributes":{"name":"Garlicky
+        Kale","img_src":"https://spoonacular.com/recipeImages/644387-312x231.jpg"}},{"id":"715446","type":"searched_recipe","attributes":{"name":"Slow
+        Cooker Beef Stew","img_src":"https://spoonacular.com/recipeImages/715446-312x231.jpg"}},{"id":"782601","type":"searched_recipe","attributes":{"name":"Red
+        Kidney Bean Jambalaya","img_src":"https://spoonacular.com/recipeImages/782601-312x231.jpg"}},{"id":"795751","type":"searched_recipe","attributes":{"name":"Chicken
+        Fajita Stuffed Bell Pepper","img_src":"https://spoonacular.com/recipeImages/795751-312x231.jpg"}},{"id":"766453","type":"searched_recipe","attributes":{"name":"Hummus
+        and Za''atar","img_src":"https://spoonacular.com/recipeImages/766453-312x231.jpg"}}]}'
+  recorded_at: Fri, 03 Nov 2023 00:31:20 GMT
+recorded_with: VCR 6.2.0
