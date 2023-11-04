@@ -1,0 +1,54 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://localhost:3000/api/v1/search?q=potato
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.11
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - '0'
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Type:
+      - application/json; charset=utf-8
+      Vary:
+      - Origin
+      Etag:
+      - W/"930dcd925e093c03131b6e333406c4c8"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 3938cbb6-8433-4eef-ade5-6e3adcc15a8e
+      X-Runtime:
+      - '0.599790'
+      Server-Timing:
+      - start_processing.action_controller;dur=0.12, process_action.action_controller;dur=593.38
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        eyJkYXRhIjpbeyJpZCI6IjY1Njk3MSIsInR5cGUiOiJzZWFyY2hlZF9yZWNpcGUiLCJhdHRyaWJ1dGVzIjp7Im5hbWUiOiJQb3RhdG8gTGVlayBTb3VwIiwiaW1nX3NyYyI6Imh0dHBzOi8vc3Bvb25hY3VsYXIuY29tL3JlY2lwZUltYWdlcy82NTY5NzEtMzEyeDIzMS5qcGcifX0seyJpZCI6IjY1NzAxMSIsInR5cGUiOiJzZWFyY2hlZF9yZWNpcGUiLCJhdHRyaWJ1dGVzIjp7Im5hbWUiOiJQb3RhdG8tQ2hlZXNlIFBpZSIsImltZ19zcmMiOiJodHRwczovL3Nwb29uYWN1bGFyLmNvbS9yZWNpcGVJbWFnZXMvNjU3MDExLTMxMngyMzEuanBnIn19LHsiaWQiOiI2MzY3MjkiLCJ0eXBlIjoic2VhcmNoZWRfcmVjaXBlIiwiYXR0cmlidXRlcyI6eyJuYW1lIjoiUG90YXRvIENoaXAgQnJvd25pZXMiLCJpbWdfc3JjIjoiaHR0cHM6Ly9zcG9vbmFjdWxhci5jb20vcmVjaXBlSW1hZ2VzLzYzNjcyOS0zMTJ4MjMxLmpwZyJ9fSx7ImlkIjoiNjU2OTIxIiwidHlwZSI6InNlYXJjaGVkX3JlY2lwZSIsImF0dHJpYnV0ZXMiOnsibmFtZSI6IlBvdGF0byBhbmQgTGVlayBHcmF0aW4iLCJpbWdfc3JjIjoiaHR0cHM6Ly9zcG9vbmFjdWxhci5jb20vcmVjaXBlSW1hZ2VzLzY1NjkyMS0zMTJ4MjMxLmpwZyJ9fSx7ImlkIjoiNjU2OTYyIiwidHlwZSI6InNlYXJjaGVkX3JlY2lwZSIsImF0dHJpYnV0ZXMiOnsibmFtZSI6IlBvdGF0byBHcmF0aW4gd2l0aCBHb2F0IENoZWVzZSIsImltZ19zcmMiOiJodHRwczovL3Nwb29uYWN1bGFyLmNvbS9yZWNpcGVJbWFnZXMvNjU2OTYyLTMxMngyMzEuanBnIn19LHsiaWQiOiI2NTY5MjUiLCJ0eXBlIjoic2VhcmNoZWRfcmVjaXBlIiwiYXR0cmlidXRlcyI6eyJuYW1lIjoiUG90YXRvIGFuZCBTY2FsbGlvbiBCcmVhZCBSb2xscyIsImltZ19zcmMiOiJodHRwczovL3Nwb29uYWN1bGFyLmNvbS9yZWNpcGVJbWFnZXMvNjU2OTI1LTMxMngyMzEuanBnIn19LHsiaWQiOiI2NTY5MTUiLCJ0eXBlIjoic2VhcmNoZWRfcmVjaXBlIiwiYXR0cmlidXRlcyI6eyJuYW1lIjoiUG90YXRvIGFuZCBHcmVlbiBCZWFuIFNpZGUgU2FsYWQiLCJpbWdfc3JjIjoiaHR0cHM6Ly9zcG9vbmFjdWxhci5jb20vcmVjaXBlSW1hZ2VzLzY1NjkxNS0zMTJ4MjMxLmpwZyJ9fSx7ImlkIjoiNjU3MDAwIiwidHlwZSI6InNlYXJjaGVkX3JlY2lwZSIsImF0dHJpYnV0ZXMiOnsibmFtZSI6IlBvdGF0byBTb3VwIFdpdGggUGVwcGVycyBhbmQgT2xpdmVzIiwiaW1nX3NyYyI6Imh0dHBzOi8vc3Bvb25hY3VsYXIuY29tL3JlY2lwZUltYWdlcy82NTcwMDAtMzEyeDIzMS5qcGcifX0seyJpZCI6IjEwOTYzMjMiLCJ0eXBlIjoic2VhcmNoZWRfcmVjaXBlIiwiYXR0cmlidXRlcyI6eyJuYW1lIjoiUG90YXRvIFx1MDAyNiBMZWVrIFNvdXAgd2l0aCBSb2FzdGVkIEJlZXRzIiwiaW1nX3NyYyI6Imh0dHBzOi8vc3Bvb25hY3VsYXIuY29tL3JlY2lwZUltYWdlcy8xMDk2MzIzLTMxMngyMzEuanBnIn19LHsiaWQiOiIxNjk3NTQ5IiwidHlwZSI6InNlYXJjaGVkX3JlY2lwZSIsImF0dHJpYnV0ZXMiOnsibmFtZSI6IlBvdGF0byBhbmQgTGVlayBTb3VwIOKAkyBQb3RhZ2UgUGFybWVudGllciIsImltZ19zcmMiOiJodHRwczovL3Nwb29uYWN1bGFyLmNvbS9yZWNpcGVJbWFnZXMvMTY5NzU0OS0zMTJ4MjMxLmpwZyJ9fV19
+  recorded_at: Fri, 03 Nov 2023 01:27:13 GMT
+recorded_with: VCR 6.2.0
