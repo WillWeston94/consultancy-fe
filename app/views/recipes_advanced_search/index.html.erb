@@ -1,6 +1,9 @@
- <%= form_with url: recipes_path, method: :get, local: true, data: {turbo: false}, class: "default-search-form"  do |f| %>
-      <%= f.text_field :search, placeholder: "Search by Ingredients..." %>
-      <%= f.submit "Search" %>
+ <%= form_with url: recipes_advanced_search_index_path, method: :get, local: true, data: {turbo: false}, class: "advanced-search-form"  do |f| %>
+      <%= f.text_field :advanced_search, placeholder: "Search by Ingredients..." %>
+      <%= f.submit "Advanced Search" %>
+      <%# f.checkbox :breakfast %>
+  <%# f.checkbox :lunch %>
+  <%# f.checkbox :dinner %>
   <% end %>
 
 <div class = "container">

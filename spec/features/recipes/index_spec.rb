@@ -35,7 +35,21 @@ RSpec.describe "Recipes Index Page" do
   it "displays a search bar specific to the recipe results page", :vcr do
     visit "/recipes"
 
-    expect(page).to have_button("Search", count: 2)
+    within(".default-search-form") do
+      expect(page).to have_button("Search")
+    end
+
+    within(".header-search-form") do
+      expect(page).to have_button("Search")
+    end
+
+  end
+
+  it "sends the user to the recipe advancaed search page after clicking the button", :vcr do
+    visit "/recipes"
+    click_button("Advanced Search")
+
+    expect(current_path).to eq(recipes_advanced_search_index_path)
   end
 
   xit "displays an image for every recipe" do
