@@ -10,7 +10,7 @@ class RecipesAdvancedSearchController < ApplicationController
   private
 
   def filtering_params(params)
-    params.slice(:breakfast, :vegetarian)
+    params.slice(:breakfast, :vegetarian, :main_course)
   end
   
 end
