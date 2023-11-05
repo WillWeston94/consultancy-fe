@@ -39,11 +39,11 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 1505e44a-82f5-4808-b27e-a3ba44fedccd
+      - 9124bd2e-120c-443a-a151-0effaf1ff484
       X-Runtime:
-      - '0.607045'
+      - '0.672908'
       Server-Timing:
-      - start_processing.action_controller;dur=0.05, process_action.action_controller;dur=604.58
+      - start_processing.action_controller;dur=0.06, process_action.action_controller;dur=670.30
       Transfer-Encoding:
       - chunked
     body:
@@ -59,7 +59,7 @@ http_interactions:
         Kidney Bean Jambalaya","img_src":"https://spoonacular.com/recipeImages/782601-312x231.jpg"}},{"id":"795751","type":"searched_recipe","attributes":{"name":"Chicken
         Fajita Stuffed Bell Pepper","img_src":"https://spoonacular.com/recipeImages/795751-312x231.jpg"}},{"id":"766453","type":"searched_recipe","attributes":{"name":"Hummus
         and Za''atar","img_src":"https://spoonacular.com/recipeImages/766453-312x231.jpg"}}]}'
-  recorded_at: Sun, 05 Nov 2023 18:39:49 GMT
+  recorded_at: Sun, 05 Nov 2023 19:30:30 GMT
 - request:
     method: get
     uri: http://localhost:3000/api/v1/search?q=%20main%20course
@@ -99,11 +99,11 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 4f0eb839-51b4-49dd-8e1d-f9534d20a251
+      - d85d4ae3-9d85-4c33-b819-404f8542a37d
       X-Runtime:
-      - '0.661328'
+      - '0.687238'
       Server-Timing:
-      - start_processing.action_controller;dur=0.06, process_action.action_controller;dur=659.15
+      - start_processing.action_controller;dur=0.05, process_action.action_controller;dur=684.79
       Transfer-Encoding:
       - chunked
     body:
@@ -113,5 +113,5 @@ http_interactions:
         Artichoke Main Dish","img_src":"https://spoonacular.com/recipeImages/640921-312x231.jpg"}},{"id":"645961","type":"searched_recipe","attributes":{"name":"Indian-Spiced
         Ground Beef Main Dish","img_src":"https://spoonacular.com/recipeImages/645961-312x231.jpg"}},{"id":"1096208","type":"searched_recipe","attributes":{"name":"Spinach
         Goats Cheese Roulade Main Dish","img_src":"https://spoonacular.com/recipeImages/1096208-312x231.jpg"}},{"id":"654307","type":"searched_recipe","attributes":{"name":"Ozoni","img_src":"https://spoonacular.com/recipeImages/654307-312x231.jpg"}},{"id":"646071","type":"searched_recipe","attributes":{"name":"Gyros","img_src":"https://spoonacular.com/recipeImages/646071-312x231.jpg"}},{"id":"635701","type":"searched_recipe","attributes":{"name":"Boudin","img_src":"https://spoonacular.com/recipeImages/635701-312x231.jpg"}},{"id":"633376","type":"searched_recipe","attributes":{"name":"Bagels","img_src":"https://spoonacular.com/recipeImages/633376-312x231.jpg"}},{"id":"663669","type":"searched_recipe","attributes":{"name":"Tonkatsu","img_src":"https://spoonacular.com/recipeImages/663669-312x231.jpg"}},{"id":"643857","type":"searched_recipe","attributes":{"name":"Frittata","img_src":"https://spoonacular.com/recipeImages/643857-312x231.jpg"}}]}'
-  recorded_at: Sun, 05 Nov 2023 18:39:50 GMT
+  recorded_at: Sun, 05 Nov 2023 19:30:30 GMT
 recorded_with: VCR 6.2.0

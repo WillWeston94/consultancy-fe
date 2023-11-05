@@ -49,4 +49,19 @@ RSpec.describe "Recipes Advanced Search Index Page" do
     expect(current_path).to eq(recipes_advanced_search_index_path)
     expect(page).to have_content("Grilled Romaine Salad")
   end
+
+  it "allows the user to search when using many filters", :vcr do
+    visit "/recipes_advanced_search"
+
+    within(".advanced-search-form") do
+      fill_in :advanced_search, with: "Cheese"
+      find(:css, "#breakfast").set(true)
+      find(:css, "#vegetarian").set(true)
+      find(:css, "#soy_free").set(true)
+      click_button "Search"
+    end
+
+    expect(current_path).to eq(recipes_advanced_search_index_path)
+    expect(page).to have_content("Savory Cheese Dill Scones")
+  end
 end

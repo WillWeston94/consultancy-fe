@@ -39,11 +39,11 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - a188a7e1-9f76-4fba-be17-0e88f7a31cd4
+      - 3dafc430-e410-40ad-b1f5-c2a40e5422e4
       X-Runtime:
-      - '0.537256'
+      - '0.574440'
       Server-Timing:
-      - start_processing.action_controller;dur=0.08, process_action.action_controller;dur=533.61
+      - start_processing.action_controller;dur=0.06, process_action.action_controller;dur=570.27
       Transfer-Encoding:
       - chunked
     body:
@@ -59,7 +59,7 @@ http_interactions:
         Kidney Bean Jambalaya","img_src":"https://spoonacular.com/recipeImages/782601-312x231.jpg"}},{"id":"795751","type":"searched_recipe","attributes":{"name":"Chicken
         Fajita Stuffed Bell Pepper","img_src":"https://spoonacular.com/recipeImages/795751-312x231.jpg"}},{"id":"766453","type":"searched_recipe","attributes":{"name":"Hummus
         and Za''atar","img_src":"https://spoonacular.com/recipeImages/766453-312x231.jpg"}}]}'
-  recorded_at: Sun, 05 Nov 2023 18:41:16 GMT
+  recorded_at: Sun, 05 Nov 2023 19:30:27 GMT
 - request:
     method: get
     uri: http://localhost:3000/api/v1/search?q=Potato
@@ -99,16 +99,16 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 90df9559-8869-43d7-81d4-c7ded0c90ee5
+      - 7a0228a6-2b9e-4a64-839b-fdccdaaac753
       X-Runtime:
-      - '0.781316'
+      - '0.285602'
       Server-Timing:
-      - start_processing.action_controller;dur=0.06, process_action.action_controller;dur=776.64
+      - start_processing.action_controller;dur=0.06, process_action.action_controller;dur=282.46
       Transfer-Encoding:
       - chunked
     body:
       encoding: ASCII-8BIT
       string: !binary |-
         eyJkYXRhIjpbeyJpZCI6IjY1Njk3MSIsInR5cGUiOiJzZWFyY2hlZF9yZWNpcGUiLCJhdHRyaWJ1dGVzIjp7Im5hbWUiOiJQb3RhdG8gTGVlayBTb3VwIiwiaW1nX3NyYyI6Imh0dHBzOi8vc3Bvb25hY3VsYXIuY29tL3JlY2lwZUltYWdlcy82NTY5NzEtMzEyeDIzMS5qcGcifX0seyJpZCI6IjY1NzAxMSIsInR5cGUiOiJzZWFyY2hlZF9yZWNpcGUiLCJhdHRyaWJ1dGVzIjp7Im5hbWUiOiJQb3RhdG8tQ2hlZXNlIFBpZSIsImltZ19zcmMiOiJodHRwczovL3Nwb29uYWN1bGFyLmNvbS9yZWNpcGVJbWFnZXMvNjU3MDExLTMxMngyMzEuanBnIn19LHsiaWQiOiI2MzY3MjkiLCJ0eXBlIjoic2VhcmNoZWRfcmVjaXBlIiwiYXR0cmlidXRlcyI6eyJuYW1lIjoiUG90YXRvIENoaXAgQnJvd25pZXMiLCJpbWdfc3JjIjoiaHR0cHM6Ly9zcG9vbmFjdWxhci5jb20vcmVjaXBlSW1hZ2VzLzYzNjcyOS0zMTJ4MjMxLmpwZyJ9fSx7ImlkIjoiNjU2OTIxIiwidHlwZSI6InNlYXJjaGVkX3JlY2lwZSIsImF0dHJpYnV0ZXMiOnsibmFtZSI6IlBvdGF0byBhbmQgTGVlayBHcmF0aW4iLCJpbWdfc3JjIjoiaHR0cHM6Ly9zcG9vbmFjdWxhci5jb20vcmVjaXBlSW1hZ2VzLzY1NjkyMS0zMTJ4MjMxLmpwZyJ9fSx7ImlkIjoiNjU2OTYyIiwidHlwZSI6InNlYXJjaGVkX3JlY2lwZSIsImF0dHJpYnV0ZXMiOnsibmFtZSI6IlBvdGF0byBHcmF0aW4gd2l0aCBHb2F0IENoZWVzZSIsImltZ19zcmMiOiJodHRwczovL3Nwb29uYWN1bGFyLmNvbS9yZWNpcGVJbWFnZXMvNjU2OTYyLTMxMngyMzEuanBnIn19LHsiaWQiOiI2NTY5MjUiLCJ0eXBlIjoic2VhcmNoZWRfcmVjaXBlIiwiYXR0cmlidXRlcyI6eyJuYW1lIjoiUG90YXRvIGFuZCBTY2FsbGlvbiBCcmVhZCBSb2xscyIsImltZ19zcmMiOiJodHRwczovL3Nwb29uYWN1bGFyLmNvbS9yZWNpcGVJbWFnZXMvNjU2OTI1LTMxMngyMzEuanBnIn19LHsiaWQiOiI2NTY5MTUiLCJ0eXBlIjoic2VhcmNoZWRfcmVjaXBlIiwiYXR0cmlidXRlcyI6eyJuYW1lIjoiUG90YXRvIGFuZCBHcmVlbiBCZWFuIFNpZGUgU2FsYWQiLCJpbWdfc3JjIjoiaHR0cHM6Ly9zcG9vbmFjdWxhci5jb20vcmVjaXBlSW1hZ2VzLzY1NjkxNS0zMTJ4MjMxLmpwZyJ9fSx7ImlkIjoiNjU3MDAwIiwidHlwZSI6InNlYXJjaGVkX3JlY2lwZSIsImF0dHJpYnV0ZXMiOnsibmFtZSI6IlBvdGF0byBTb3VwIFdpdGggUGVwcGVycyBhbmQgT2xpdmVzIiwiaW1nX3NyYyI6Imh0dHBzOi8vc3Bvb25hY3VsYXIuY29tL3JlY2lwZUltYWdlcy82NTcwMDAtMzEyeDIzMS5qcGcifX0seyJpZCI6IjEwOTYzMjMiLCJ0eXBlIjoic2VhcmNoZWRfcmVjaXBlIiwiYXR0cmlidXRlcyI6eyJuYW1lIjoiUG90YXRvIFx1MDAyNiBMZWVrIFNvdXAgd2l0aCBSb2FzdGVkIEJlZXRzIiwiaW1nX3NyYyI6Imh0dHBzOi8vc3Bvb25hY3VsYXIuY29tL3JlY2lwZUltYWdlcy8xMDk2MzIzLTMxMngyMzEuanBnIn19LHsiaWQiOiIxNjk3NTQ5IiwidHlwZSI6InNlYXJjaGVkX3JlY2lwZSIsImF0dHJpYnV0ZXMiOnsibmFtZSI6IlBvdGF0byBhbmQgTGVlayBTb3VwIOKAkyBQb3RhZ2UgUGFybWVudGllciIsImltZ19zcmMiOiJodHRwczovL3Nwb29uYWN1bGFyLmNvbS9yZWNpcGVJbWFnZXMvMTY5NzU0OS0zMTJ4MjMxLmpwZyJ9fV19
-  recorded_at: Sun, 05 Nov 2023 18:41:17 GMT
+  recorded_at: Sun, 05 Nov 2023 19:30:28 GMT
 recorded_with: VCR 6.2.0
