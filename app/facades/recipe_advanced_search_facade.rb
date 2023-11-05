@@ -6,8 +6,7 @@ class RecipeAdvancedSearchFacade
   end
 
   def recipes
-    advanced_search = combine_filters
-    data = RecipeDatabaseService.new.recipes_by_keyword(advanced_search)
+    data = RecipeDatabaseService.new.recipes_by_keyword(combine_filters)
 
     data[:data].map do |recipe_data|
       Recipe.new(recipe_data)

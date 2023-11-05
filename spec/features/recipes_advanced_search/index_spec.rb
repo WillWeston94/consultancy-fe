@@ -32,12 +32,6 @@ RSpec.describe "Recipes Advanced Search Index Page" do
     expect(page).to have_content("Coffee Cake")
   end
 
-  xit "displays a form which contains all possible options for advanced search type", :vcr do
-    visit "/recipes_advanced_search"
-
-    expect(page).to have_content("Placeholder")
-  end
-
   it "allows the user to use the main course checkbox", :vcr do
     visit "/recipes_advanced_search"
 
