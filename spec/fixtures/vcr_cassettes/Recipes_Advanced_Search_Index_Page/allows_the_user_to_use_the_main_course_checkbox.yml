@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: http://localhost:3000/api/v1/search?q=
+    uri: http://localhost:3000/api/v1/search?intolerances=%7B%7D&q=
     body:
       encoding: US-ASCII
       string: ''
@@ -35,34 +35,24 @@ http_interactions:
       Vary:
       - Origin
       Etag:
-      - W/"10c77c3bebbc541dda05ff996a7411e3"
+      - W/"8fe32e407a1038ee38753b70e5374b3a"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 9124bd2e-120c-443a-a151-0effaf1ff484
+      - 2cc27e3e-ff1b-423f-b5f8-8cf20b888aba
       X-Runtime:
-      - '0.672908'
+      - '0.530440'
       Server-Timing:
-      - start_processing.action_controller;dur=0.06, process_action.action_controller;dur=670.30
+      - start_processing.action_controller;dur=0.06, process_action.action_controller;dur=527.75
       Transfer-Encoding:
       - chunked
     body:
       encoding: UTF-8
-      string: '{"data":[{"id":"782585","type":"searched_recipe","attributes":{"name":"Cannellini
-        Bean and Asparagus Salad with Mushrooms","img_src":"https://spoonacular.com/recipeImages/782585-312x231.jpg"}},{"id":"716426","type":"searched_recipe","attributes":{"name":"Cauliflower,
-        Brown Rice, and Vegetable Fried Rice","img_src":"https://spoonacular.com/recipeImages/716426-312x231.jpg"}},{"id":"715497","type":"searched_recipe","attributes":{"name":"Berry
-        Banana Breakfast Smoothie","img_src":"https://spoonacular.com/recipeImages/715497-312x231.jpg"}},{"id":"715415","type":"searched_recipe","attributes":{"name":"Red
-        Lentil Soup with Chicken and Turnips","img_src":"https://spoonacular.com/recipeImages/715415-312x231.jpg"}},{"id":"716406","type":"searched_recipe","attributes":{"name":"Asparagus
-        and Pea Soup: Real Convenience Food","img_src":"https://spoonacular.com/recipeImages/716406-312x231.jpg"}},{"id":"644387","type":"searched_recipe","attributes":{"name":"Garlicky
-        Kale","img_src":"https://spoonacular.com/recipeImages/644387-312x231.jpg"}},{"id":"715446","type":"searched_recipe","attributes":{"name":"Slow
-        Cooker Beef Stew","img_src":"https://spoonacular.com/recipeImages/715446-312x231.jpg"}},{"id":"782601","type":"searched_recipe","attributes":{"name":"Red
-        Kidney Bean Jambalaya","img_src":"https://spoonacular.com/recipeImages/782601-312x231.jpg"}},{"id":"795751","type":"searched_recipe","attributes":{"name":"Chicken
-        Fajita Stuffed Bell Pepper","img_src":"https://spoonacular.com/recipeImages/795751-312x231.jpg"}},{"id":"766453","type":"searched_recipe","attributes":{"name":"Hummus
-        and Za''atar","img_src":"https://spoonacular.com/recipeImages/766453-312x231.jpg"}}]}'
-  recorded_at: Sun, 05 Nov 2023 19:30:30 GMT
+      string: '{"data":[]}'
+  recorded_at: Mon, 06 Nov 2023 22:02:40 GMT
 - request:
     method: get
-    uri: http://localhost:3000/api/v1/search?q=%20main%20course
+    uri: http://localhost:3000/api/v1/search?intolerances=%7B%7D&q=%20main%20course
     body:
       encoding: US-ASCII
       string: ''
@@ -95,15 +85,15 @@ http_interactions:
       Vary:
       - Origin
       Etag:
-      - W/"9dbbc55d633a597393eea2fcb7dabf3c"
+      - W/"964b8022289511af7c2a6a0f7a02ef73"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - d85d4ae3-9d85-4c33-b819-404f8542a37d
+      - a1d74017-185f-4597-aa31-3f9cfc08ba5c
       X-Runtime:
-      - '0.687238'
+      - '0.320858'
       Server-Timing:
-      - start_processing.action_controller;dur=0.05, process_action.action_controller;dur=684.79
+      - start_processing.action_controller;dur=0.08, process_action.action_controller;dur=317.06
       Transfer-Encoding:
       - chunked
     body:
@@ -112,6 +102,88 @@ http_interactions:
         Romaine Salad with Bacon and Blue Cheese","img_src":"https://spoonacular.com/recipeImages/645843-312x231.jpg"}},{"id":"640921","type":"searched_recipe","attributes":{"name":"Stuffed
         Artichoke Main Dish","img_src":"https://spoonacular.com/recipeImages/640921-312x231.jpg"}},{"id":"645961","type":"searched_recipe","attributes":{"name":"Indian-Spiced
         Ground Beef Main Dish","img_src":"https://spoonacular.com/recipeImages/645961-312x231.jpg"}},{"id":"1096208","type":"searched_recipe","attributes":{"name":"Spinach
-        Goats Cheese Roulade Main Dish","img_src":"https://spoonacular.com/recipeImages/1096208-312x231.jpg"}},{"id":"654307","type":"searched_recipe","attributes":{"name":"Ozoni","img_src":"https://spoonacular.com/recipeImages/654307-312x231.jpg"}},{"id":"646071","type":"searched_recipe","attributes":{"name":"Gyros","img_src":"https://spoonacular.com/recipeImages/646071-312x231.jpg"}},{"id":"635701","type":"searched_recipe","attributes":{"name":"Boudin","img_src":"https://spoonacular.com/recipeImages/635701-312x231.jpg"}},{"id":"633376","type":"searched_recipe","attributes":{"name":"Bagels","img_src":"https://spoonacular.com/recipeImages/633376-312x231.jpg"}},{"id":"663669","type":"searched_recipe","attributes":{"name":"Tonkatsu","img_src":"https://spoonacular.com/recipeImages/663669-312x231.jpg"}},{"id":"643857","type":"searched_recipe","attributes":{"name":"Frittata","img_src":"https://spoonacular.com/recipeImages/643857-312x231.jpg"}}]}'
-  recorded_at: Sun, 05 Nov 2023 19:30:30 GMT
+        Goats Cheese Roulade Main Dish","img_src":"https://spoonacular.com/recipeImages/1096208-312x231.jpg"}},{"id":"654307","type":"searched_recipe","attributes":{"name":"Ozoni","img_src":"https://spoonacular.com/recipeImages/654307-312x231.jpg"}},{"id":"646071","type":"searched_recipe","attributes":{"name":"Gyros","img_src":"https://spoonacular.com/recipeImages/646071-312x231.jpg"}},{"id":"635701","type":"searched_recipe","attributes":{"name":"Boudin","img_src":"https://spoonacular.com/recipeImages/635701-312x231.jpg"}},{"id":"633376","type":"searched_recipe","attributes":{"name":"Bagels","img_src":"https://spoonacular.com/recipeImages/633376-312x231.jpg"}},{"id":"663669","type":"searched_recipe","attributes":{"name":"Tonkatsu","img_src":"https://spoonacular.com/recipeImages/663669-312x231.jpg"}},{"id":"643857","type":"searched_recipe","attributes":{"name":"Frittata","img_src":"https://spoonacular.com/recipeImages/643857-312x231.jpg"}},{"id":"634251","type":"searched_recipe","attributes":{"name":"Bar
+        Nuts","img_src":"https://spoonacular.com/recipeImages/634251-312x231.jpg"}},{"id":"45937","type":"searched_recipe","attributes":{"name":"Mole
+        Pork","img_src":"https://spoonacular.com/recipeImages/45937-312x231.jpg"}},{"id":"654125","type":"searched_recipe","attributes":{"name":"Osso
+        Buco","img_src":"https://spoonacular.com/recipeImages/654125-312x231.jpg"}},{"id":"680975","type":"searched_recipe","attributes":{"name":"BLT
+        Pizza","img_src":"https://spoonacular.com/recipeImages/680975-312x231.jpg"}},{"id":"665438","type":"searched_recipe","attributes":{"name":"Wuxi
+        Ribs","img_src":"https://spoonacular.com/recipeImages/665438-312x231.jpg"}},{"id":"654991","type":"searched_recipe","attributes":{"name":"Pastitsio","img_src":"https://spoonacular.com/recipeImages/654991-312x231.jpg"}},{"id":"617047","type":"searched_recipe","attributes":{"name":"Rasmalai","img_src":"https://spoonacular.com/recipeImages/617047-312x231.jpg"}},{"id":"648852","type":"searched_recipe","attributes":{"name":"Khachapuri","img_src":"https://spoonacular.com/recipeImages/648852-312x231.jpg"}},{"id":"633876","type":"searched_recipe","attributes":{"name":"Baked
+        Ziti","img_src":"https://spoonacular.com/recipeImages/633876-312x231.jpg"}},{"id":"663136","type":"searched_recipe","attributes":{"name":"Thai
+        Pizza","img_src":"https://spoonacular.com/recipeImages/663136-312x231.jpg"}},{"id":"660884","type":"searched_recipe","attributes":{"name":"Spare
+        Ribs","img_src":"https://spoonacular.com/recipeImages/660884-312x231.jpg"}},{"id":"649264","type":"searched_recipe","attributes":{"name":"Larb
+        Salad","img_src":"https://spoonacular.com/recipeImages/649264-312x231.jpg"}},{"id":"651922","type":"searched_recipe","attributes":{"name":"Minestrone","img_src":"https://spoonacular.com/recipeImages/651922-312x231.jpg"}},{"id":"654212","type":"searched_recipe","attributes":{"name":"Oven
+        Roast","img_src":"https://spoonacular.com/recipeImages/654212-312x231.jpg"}},{"id":"634698","type":"searched_recipe","attributes":{"name":"Beef
+        Tataki","img_src":"https://spoonacular.com/recipeImages/634698-312x231.jpg"}},{"id":"663151","type":"searched_recipe","attributes":{"name":"Thai
+        Shrimp","img_src":"https://spoonacular.com/recipeImages/663151-312x231.jpg"}},{"id":"642929","type":"searched_recipe","attributes":{"name":"Fish
+        Congee","img_src":"https://spoonacular.com/recipeImages/642929-312x231.jpg"}},{"id":"664938","type":"searched_recipe","attributes":{"name":"Wan
+        Ton Mee","img_src":"https://spoonacular.com/recipeImages/664938-312x231.jpg"}},{"id":"647687","type":"searched_recipe","attributes":{"name":"Ratatouille","img_src":"https://spoonacular.com/recipeImages/647687-312x231.jpg"}},{"id":"1096294","type":"searched_recipe","attributes":{"name":"Chori-Pollo","img_src":"https://spoonacular.com/recipeImages/1096294-312x231.jpg"}},{"id":"659480","type":"searched_recipe","attributes":{"name":"Savory
+        Oats","img_src":"https://spoonacular.com/recipeImages/659480-312x231.jpg"}},{"id":"654371","type":"searched_recipe","attributes":{"name":"Palak
+        Gosht","img_src":"https://spoonacular.com/recipeImages/654371-312x231.jpg"}},{"id":"634476","type":"searched_recipe","attributes":{"name":"Bbq
+        Chicken","img_src":"https://spoonacular.com/recipeImages/634476-312x231.jpg"}},{"id":"657095","type":"searched_recipe","attributes":{"name":"Prawn
+        Curry","img_src":"https://spoonacular.com/recipeImages/657095-312x231.jpg"}},{"id":"656791","type":"searched_recipe","attributes":{"name":"Pork
+        Menudo","img_src":"https://spoonacular.com/recipeImages/656791-312x231.jpg"}},{"id":"632297","type":"searched_recipe","attributes":{"name":"Amatriciana","img_src":"https://spoonacular.com/recipeImages/632297-312x231.jpg"}},{"id":"640321","type":"searched_recipe","attributes":{"name":"Crab
+        Stacks","img_src":"https://spoonacular.com/recipeImages/640321-312x231.jpg"}},{"id":"635796","type":"searched_recipe","attributes":{"name":"Braised
+        Beef","img_src":"https://spoonacular.com/recipeImages/635796-312x231.jpg"}},{"id":"657379","type":"searched_recipe","attributes":{"name":"Pumpkin
+        Soup","img_src":"https://spoonacular.com/recipeImages/657379-312x231.jpg"}},{"id":"657090","type":"searched_recipe","attributes":{"name":"Prawn
+        Congee","img_src":"https://spoonacular.com/recipeImages/657090-312x231.jpg"}},{"id":"635342","type":"searched_recipe","attributes":{"name":"BLT
+        Sandwich","img_src":"https://spoonacular.com/recipeImages/635342-312x231.jpg"}},{"id":"655737","type":"searched_recipe","attributes":{"name":"Perfect
+        Peas","img_src":"https://spoonacular.com/recipeImages/655737-312x231.jpg"}},{"id":"633105","type":"searched_recipe","attributes":{"name":"Autumn
+        Salad","img_src":"https://spoonacular.com/recipeImages/633105-312x231.jpg"}},{"id":"654566","type":"searched_recipe","attributes":{"name":"Panko
+        Shrimp","img_src":"https://spoonacular.com/recipeImages/654566-312x231.jpg"}},{"id":"664786","type":"searched_recipe","attributes":{"name":"Venison
+        Stew","img_src":"https://spoonacular.com/recipeImages/664786-312x231.jpg"}},{"id":"641955","type":"searched_recipe","attributes":{"name":"Easy
+        Eclairs","img_src":"https://spoonacular.com/recipeImages/641955-312x231.jpg"}},{"id":"652939","type":"searched_recipe","attributes":{"name":"Nanaimo
+        Bars","img_src":"https://spoonacular.com/recipeImages/652939-312x231.jpg"}},{"id":"654373","type":"searched_recipe","attributes":{"name":"Palak
+        Paneer","img_src":"https://spoonacular.com/recipeImages/654373-312x231.jpg"}},{"id":"716342","type":"searched_recipe","attributes":{"name":"Chicken
+        Suya","img_src":"https://spoonacular.com/recipeImages/716342-312x231.jpg"}},{"id":"652134","type":"searched_recipe","attributes":{"name":"Mixed
+        Paella","img_src":"https://spoonacular.com/recipeImages/652134-312x231.jpg"}},{"id":"716344","type":"searched_recipe","attributes":{"name":"Kenyan
+        Pilau","img_src":"https://spoonacular.com/recipeImages/716344-312x231.jpg"}},{"id":"639658","type":"searched_recipe","attributes":{"name":"Claypot
+        Fish","img_src":"https://spoonacular.com/recipeImages/639658-312x231.jpg"}},{"id":"641687","type":"searched_recipe","attributes":{"name":"Dry
+        Mee Siam","img_src":"https://spoonacular.com/recipeImages/641687-312x231.jpg"}},{"id":"634977","type":"searched_recipe","attributes":{"name":"Bihon
+        Pancit","img_src":"https://spoonacular.com/recipeImages/634977-312x231.jpg"}},{"id":"639632","type":"searched_recipe","attributes":{"name":"Classic
+        Ragu","img_src":"https://spoonacular.com/recipeImages/639632-312x231.jpg"}},{"id":"657067","type":"searched_recipe","attributes":{"name":"Pozole
+        Verde","img_src":"https://spoonacular.com/recipeImages/657067-312x231.jpg"}},{"id":"665491","type":"searched_recipe","attributes":{"name":"Yakhni
+        Puloa","img_src":"https://spoonacular.com/recipeImages/665491-312x231.jpg"}},{"id":"632718","type":"searched_recipe","attributes":{"name":"Armenian
+        Stew","img_src":"https://spoonacular.com/recipeImages/632718-312x231.jpg"}},{"id":"663971","type":"searched_recipe","attributes":{"name":"Turbo
+        Chicken","img_src":"https://spoonacular.com/recipeImages/663971-312x231.jpg"}},{"id":"632810","type":"searched_recipe","attributes":{"name":"Asian
+        Chicken","img_src":"https://spoonacular.com/recipeImages/632810-312x231.jpg"}},{"id":"644357","type":"searched_recipe","attributes":{"name":"Garlic
+        Shrimp","img_src":"https://spoonacular.com/recipeImages/644357-312x231.jpg"}},{"id":"633638","type":"searched_recipe","attributes":{"name":"Baked
+        Halibut","img_src":"https://spoonacular.com/recipeImages/633638-312x231.jpg"}},{"id":"633959","type":"searched_recipe","attributes":{"name":"Balti
+        Chicken","img_src":"https://spoonacular.com/recipeImages/633959-312x231.jpg"}},{"id":"649196","type":"searched_recipe","attributes":{"name":"Lamb
+        Chop Fry","img_src":"https://spoonacular.com/recipeImages/649196-312x231.jpg"}},{"id":"632343","type":"searched_recipe","attributes":{"name":"Anchovy
+        Sauce","img_src":"https://spoonacular.com/recipeImages/632343-312x231.jpg"}},{"id":"638308","type":"searched_recipe","attributes":{"name":"Chicken
+        Satay","img_src":"https://spoonacular.com/recipeImages/638308-312x231.jpg"}},{"id":"634404","type":"searched_recipe","attributes":{"name":"Basic
+        Risotto","img_src":"https://spoonacular.com/recipeImages/634404-312x231.jpg"}},{"id":"715623","type":"searched_recipe","attributes":{"name":"Loaded
+        Nachos","img_src":"https://spoonacular.com/recipeImages/715623-312x231.jpg"}},{"id":"635964","type":"searched_recipe","attributes":{"name":"Bread
+        Omlette","img_src":"https://spoonacular.com/recipeImages/635964-312x231.jpg"}},{"id":"659638","type":"searched_recipe","attributes":{"name":"Seafood
+        Gumbo","img_src":"https://spoonacular.com/recipeImages/659638-312x231.jpg"}},{"id":"632854","type":"searched_recipe","attributes":{"name":"Asian
+        Noodles","img_src":"https://spoonacular.com/recipeImages/632854-312x231.jpg"}},{"id":"639855","type":"searched_recipe","attributes":{"name":"Codfish
+        Salad","img_src":"https://spoonacular.com/recipeImages/639855-312x231.jpg"}},{"id":"651342","type":"searched_recipe","attributes":{"name":"Meatball
+        Subs","img_src":"https://spoonacular.com/recipeImages/651342-312x231.jpg"}},{"id":"654285","type":"searched_recipe","attributes":{"name":"Oxtail
+        Ragout","img_src":"https://spoonacular.com/recipeImages/654285-312x231.jpg"}},{"id":"632017","type":"searched_recipe","attributes":{"name":"Agedashi
+        Tofu","img_src":"https://spoonacular.com/recipeImages/632017-312x231.jpg"}},{"id":"649225","type":"searched_recipe","attributes":{"name":"Lamb
+        Moussaka","img_src":"https://spoonacular.com/recipeImages/649225-312x231.jpg"}},{"id":"642121","type":"searched_recipe","attributes":{"name":"Easy
+        Tabouleh","img_src":"https://spoonacular.com/recipeImages/642121-312x231.jpg"}},{"id":"652919","type":"searched_recipe","attributes":{"name":"Nachos
+        Grande","img_src":"https://spoonacular.com/recipeImages/652919-312x231.jpg"}},{"id":"641128","type":"searched_recipe","attributes":{"name":"Curry
+        Mussels","img_src":"https://spoonacular.com/recipeImages/641128-312x231.jpg"}},{"id":"659907","type":"searched_recipe","attributes":{"name":"Shrimp
+        \u0026 Orzo","img_src":"https://spoonacular.com/recipeImages/659907-312x231.jpg"}},{"id":"1096010","type":"searched_recipe","attributes":{"name":"Egg
+        Salad Wrap","img_src":"https://spoonacular.com/recipeImages/1096010-312x231.jpg"}},{"id":"649280","type":"searched_recipe","attributes":{"name":"Lasagna
+        Silvia","img_src":"https://spoonacular.com/recipeImages/649280-312x231.jpg"}},{"id":"645742","type":"searched_recipe","attributes":{"name":"Grilled
+        Kabobs","img_src":"https://spoonacular.com/recipeImages/645742-312x231.jpg"}},{"id":"633251","type":"searched_recipe","attributes":{"name":"Bacalhau
+        Macau","img_src":"https://spoonacular.com/recipeImages/633251-312x231.jpg"}},{"id":"716300","type":"searched_recipe","attributes":{"name":"Plantain
+        Pizza","img_src":"https://spoonacular.com/recipeImages/716300-312x231.jpg"}},{"id":"634537","type":"searched_recipe","attributes":{"name":"Beanie
+        Weenies","img_src":"https://spoonacular.com/recipeImages/634537-312x231.jpg"}},{"id":"648430","type":"searched_recipe","attributes":{"name":"Jambalaya
+        Soup","img_src":"https://spoonacular.com/recipeImages/648430-312x231.jpg"}},{"id":"648432","type":"searched_recipe","attributes":{"name":"Jambalaya
+        Stew","img_src":"https://spoonacular.com/recipeImages/648432-312x231.jpg"}},{"id":"629963","type":"searched_recipe","attributes":{"name":"chilli
+        chicken","img_src":"https://spoonacular.com/recipeImages/629963-312x231.jpg"}},{"id":"994607","type":"searched_recipe","attributes":{"name":"Kaiserschmarrn","img_src":"https://spoonacular.com/recipeImages/994607-312x231.jpg"}},{"id":"715467","type":"searched_recipe","attributes":{"name":"Turkey
+        Pot Pie","img_src":"https://spoonacular.com/recipeImages/715467-312x231.jpg"}},{"id":"1460497","type":"searched_recipe","attributes":{"name":"Taco
+        Casserole","img_src":"https://spoonacular.com/recipeImages/1460497-312x231.jpg"}},{"id":"715424","type":"searched_recipe","attributes":{"name":"The
+        Best Chili","img_src":"https://spoonacular.com/recipeImages/715424-312x231.jpg"}},{"id":"1697821","type":"searched_recipe","attributes":{"name":"Mushroom
+        Jerky","img_src":"https://spoonacular.com/recipeImages/1697821-312x231.jpg"}},{"id":"631814","type":"searched_recipe","attributes":{"name":"$50,000
+        Burger","img_src":"https://spoonacular.com/recipeImages/631814-312x231.jpg"}},{"id":"729366","type":"searched_recipe","attributes":{"name":"Plantain
+        Salad","img_src":"https://spoonacular.com/recipeImages/729366-312x231.jpg"}},{"id":"633766","type":"searched_recipe","attributes":{"name":"Baked
+        Rigatoni","img_src":"https://spoonacular.com/recipeImages/633766-312x231.jpg"}},{"id":"664011","type":"searched_recipe","attributes":{"name":"Turkey
+        Burgers","img_src":"https://spoonacular.com/recipeImages/664011-312x231.jpg"}},{"id":"663050","type":"searched_recipe","attributes":{"name":"Tex-Mex
+        Burger","img_src":"https://spoonacular.com/recipeImages/663050-312x231.jpg"}},{"id":"663144","type":"searched_recipe","attributes":{"name":"Thai
+        Red Curry","img_src":"https://spoonacular.com/recipeImages/663144-312x231.jpg"}}]}'
+  recorded_at: Mon, 06 Nov 2023 22:02:40 GMT
 recorded_with: VCR 6.2.0

@@ -1,12 +1,13 @@
 class RecipeAdvancedSearchFacade
   attr_reader :search
-  def initialize(search, filtered_params)
+  def initialize(search, filtered_params, filtered_intolerances)
     @search = search
     @filtered_params = filtered_params
+    @filtered_intolerances = filtered_intolerances
   end
 
   def recipes
-    data = RecipeDatabaseService.new.recipes_by_keyword(combine_filters)
+    data = RecipeDatabaseService.new.recipes_by_keyword_with_intolerances(combine_filters, combine_intolerances)
 
     data[:data].map do |recipe_data|
       Recipe.new(recipe_data)
@@ -33,4 +34,18 @@ class RecipeAdvancedSearchFacade
 
     search.join(" ")
   end
+
+  def combine_intolerances
+    no_underscore_hash = Hash.new(0)
+    
+    @filtered_intolerances.each do |k,v|
+      no_underscore_k = k.gsub("_", " ")
+      no_underscore_hash[no_underscore_k] = v
+    end
+
+    no_underscore_hash.each do |k,v|
+      search << k if v == "1"
+    end
+  end
+    
 end

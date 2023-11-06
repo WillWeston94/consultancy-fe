@@ -1,3 +1,6 @@
+#Warning: The individual check box tests suck.  They are dependent on the API, and can fail if the API is altered
+#Also, after getting adding the intolerance parameter, the searches aren't 100% perfect.  Since we still get a ton of results, I'm ignoring this for now
+
 require "rails_helper"
 
 RSpec.describe "Recipes Advanced Search Index Page" do
@@ -14,7 +17,7 @@ RSpec.describe "Recipes Advanced Search Index Page" do
 
     expect(current_path).to eq(recipes_advanced_search_index_path)
     expect(page).to have_content("Potato Leek Soup")
-    expect(page).to have_content("Potato Chip Brownies")
+    expect(page).to have_content("Pan Roasted New Potatoes With Fresh Herbs")
   end
 
   it 'allows the user to search with the breakfast filter', :vcr do
@@ -94,7 +97,7 @@ RSpec.describe "Recipes Advanced Search Index Page" do
 
     expect(current_path).to eq(recipes_advanced_search_index_path)
     expect(page).to have_content("Larb Salad")
-    expect(page).to have_content("Fresh Lentil Salad")
+    expect(page).to have_content("Simple Caesar Salad")
   end
 
   it "allows the user to use the soup checkbox", :vcr do
@@ -132,7 +135,7 @@ RSpec.describe "Recipes Advanced Search Index Page" do
 
     expect(current_path).to eq(recipes_advanced_search_index_path)
     expect(page).to have_content("Mop Sauce")
-    expect(page).to have_content("Cod Fillet In Lemon Grass Shallot Sauce")
+    expect(page).to have_content("Blackberry and Figs Chutney")
   end
 
   it "allows the user to use the marinade checkbox", :vcr do
@@ -195,7 +198,7 @@ RSpec.describe "Recipes Advanced Search Index Page" do
     end
 
     expect(current_path).to eq(recipes_advanced_search_index_path)
-    expect(page).to have_content("Vegan Eggnog")
+    expect(page).to have_content("Vegan Potato Salad")
     expect(page).to have_content("Basic Hummus")
   end
 
@@ -268,7 +271,7 @@ RSpec.describe "Recipes Advanced Search Index Page" do
     visit "/recipes_advanced_search"
 
     within(".advanced-search-form") do
-      find(:css, "#dairy_free").set(true)
+      find(:css, "#dairy").set(true)
       click_button "Search"
     end
 
@@ -280,7 +283,7 @@ RSpec.describe "Recipes Advanced Search Index Page" do
     visit "/recipes_advanced_search"
 
     within(".advanced-search-form") do
-      find(:css, "#egg_free").set(true)
+      find(:css, "#egg").set(true)
       click_button "Search"
     end
 
@@ -292,7 +295,7 @@ RSpec.describe "Recipes Advanced Search Index Page" do
     visit "/recipes_advanced_search"
 
     within(".advanced-search-form") do
-      find(:css, "#gluten_free").set(true)
+      find(:css, "#gluten").set(true)
       click_button "Search"
     end
 
@@ -304,7 +307,7 @@ RSpec.describe "Recipes Advanced Search Index Page" do
     visit "/recipes_advanced_search"
 
     within(".advanced-search-form") do
-      find(:css, "#grain_free").set(true)
+      find(:css, "#grain").set(true)
       click_button "Search"
     end
 
@@ -312,23 +315,25 @@ RSpec.describe "Recipes Advanced Search Index Page" do
     expect(page).to have_content("Placeholder")
   end
 
-  xit "allows the user to use the peanut free checkbox", :vcr do
+  it "allows the user to use the peanut free checkbox", :vcr do
     visit "/recipes_advanced_search"
 
     within(".advanced-search-form") do
-      find(:css, "#peanut_free").set(true)
+      find(:css, "#peanut").set(true)
       click_button "Search"
     end
 
     expect(current_path).to eq(recipes_advanced_search_index_path)
-    expect(page).to have_content("Placeholder")
+    expect(page).not_to have_content("Chocolate Peanut Butter Cinnamon Smoothie")
+    expect(page).to have_content("Berry Banana Breakfast Smoothie")
+    expect(page).to have_content("Salmon Quinoa Risotto")
   end
 
   xit "allows the user to use the seafood free checkbox", :vcr do
     visit "/recipes_advanced_search"
 
     within(".advanced-search-form") do
-      find(:css, "#seafood_free").set(true)
+      find(:css, "#seafood").set(true)
       click_button "Search"
     end
 
@@ -340,7 +345,7 @@ RSpec.describe "Recipes Advanced Search Index Page" do
     visit "/recipes_advanced_search"
 
     within(".advanced-search-form") do
-      find(:css, "#sesame_free").set(true)
+      find(:css, "#sesame").set(true)
       click_button "Search"
     end
 
@@ -352,7 +357,7 @@ RSpec.describe "Recipes Advanced Search Index Page" do
     visit "/recipes_advanced_search"
 
     within(".advanced-search-form") do
-      find(:css, "#shellfish_free").set(true)
+      find(:css, "#shellfish").set(true)
       click_button "Search"
     end
 
@@ -364,7 +369,7 @@ RSpec.describe "Recipes Advanced Search Index Page" do
     visit "/recipes_advanced_search"
 
     within(".advanced-search-form") do
-      find(:css, "#soy_free").set(true)
+      find(:css, "#soy").set(true)
       click_button "Search"
     end
 
@@ -376,7 +381,7 @@ RSpec.describe "Recipes Advanced Search Index Page" do
     visit "/recipes_advanced_search"
 
     within(".advanced-search-form") do
-      find(:css, "#sulfite_free").set(true)
+      find(:css, "#sulfite").set(true)
       click_button "Search"
     end
 
@@ -388,7 +393,7 @@ RSpec.describe "Recipes Advanced Search Index Page" do
     visit "/recipes_advanced_search"
 
     within(".advanced-search-form") do
-      find(:css, "#tree_nut_free").set(true)
+      find(:css, "#tree_nut").set(true)
       click_button "Search"
     end
 
@@ -400,7 +405,7 @@ RSpec.describe "Recipes Advanced Search Index Page" do
     visit "/recipes_advanced_search"
 
     within(".advanced-search-form") do
-      find(:css, "#wheat_free").set(true)
+      find(:css, "#wheat").set(true)
       click_button "Search"
     end
 
@@ -408,14 +413,14 @@ RSpec.describe "Recipes Advanced Search Index Page" do
     expect(page).to have_content("Placeholder")
   end
 
-  xit "allows the user to search when using many filters", :vcr do
+  xit "allows the user to search when using many filters, as well as an intolerance", :vcr do
     visit "/recipes_advanced_search"
 
     within(".advanced-search-form") do
       fill_in :advanced_search, with: "Cheese"
       find(:css, "#breakfast").set(true)
       find(:css, "#vegetarian").set(true)
-      find(:css, "#soy_free").set(true)
+      find(:css, "#soy").set(true)
       click_button "Search"
     end
 
