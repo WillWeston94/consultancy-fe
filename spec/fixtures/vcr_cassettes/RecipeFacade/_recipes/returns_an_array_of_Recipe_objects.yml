@@ -1,0 +1,63 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://localhost:3000/api/v1/search?q=apple
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.11
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - '0'
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Type:
+      - application/json; charset=utf-8
+      Vary:
+      - Origin
+      Etag:
+      - W/"6120363b80cff39b711f1e4c58c5f3cc"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - e431eebb-2b1b-4938-92b7-64d527ca7478
+      X-Runtime:
+      - '0.599666'
+      Server-Timing:
+      - start_processing.action_controller;dur=0.06, process_action.action_controller;dur=595.83
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"data":[{"id":"632485","type":"searched_recipe","attributes":{"name":"Apple
+        Cake","img_src":"https://spoonacular.com/recipeImages/632485-312x231.jpg"}},{"id":"632522","type":"searched_recipe","attributes":{"name":"Apple
+        Crumble","img_src":"https://spoonacular.com/recipeImages/632522-312x231.jpg"}},{"id":"632573","type":"searched_recipe","attributes":{"name":"Apple
+        Pie Bars","img_src":"https://spoonacular.com/recipeImages/632573-312x231.jpg"}},{"id":"632527","type":"searched_recipe","attributes":{"name":"Apple
+        Cupcakes","img_src":"https://spoonacular.com/recipeImages/632527-312x231.jpg"}},{"id":"632543","type":"searched_recipe","attributes":{"name":"Apple
+        Footballs","img_src":"https://spoonacular.com/recipeImages/632543-312x231.jpg"}},{"id":"632603","type":"searched_recipe","attributes":{"name":"Apple
+        Tarte Tatin","img_src":"https://spoonacular.com/recipeImages/632603-312x231.jpg"}},{"id":"632481","type":"searched_recipe","attributes":{"name":"Apple
+        Brown Betty","img_src":"https://spoonacular.com/recipeImages/632481-312x231.jpg"}},{"id":"632575","type":"searched_recipe","attributes":{"name":"Apple
+        Pie Smoothie","img_src":"https://spoonacular.com/recipeImages/632575-312x231.jpg"}},{"id":"632598","type":"searched_recipe","attributes":{"name":"Apple
+        spinach soup","img_src":"https://spoonacular.com/recipeImages/632598-312x231.jpg"}},{"id":"632577","type":"searched_recipe","attributes":{"name":"Apple
+        Pie Pancakes","img_src":"https://spoonacular.com/recipeImages/632577-312x231.jpg"}}]}'
+  recorded_at: Fri, 03 Nov 2023 01:02:16 GMT
+recorded_with: VCR 6.2.0

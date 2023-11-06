@@ -13,4 +13,16 @@
  *= require_tree .
  *= require_self
  */
- @import "bootstrap";
+@import "bootstrap";
+
+
+
+.recipe-card {
+  border: 1px solid black;
+  background-color: paleturquoise;
+  height: 300 px;
+}
+
+.card-title a:hover {
+  text-decoration: underline;
+}

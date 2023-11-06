@@ -45,6 +45,7 @@ gem "bootsnap", require: false
 # Use Sass to process CSS
 gem "sassc-rails"
 gem "bootstrap"
+gem "faraday"
 
 gem 'rack-cors'
 
@@ -64,6 +65,7 @@ group :development, :test do
   gem 'capybara'
   gem 'pry'
   gem 'webmock'
+  gem 'vcr'
   gem 'shoulda-matchers'
 end
 
@@ -76,5 +78,9 @@ group :development do
 
   # Speed up commands on slow machines / big apps [https://github.com/rails/spring]
   # gem "spring"
+end
+
+group :test do
+  gem 'simplecov'
 end
 
