@@ -42,3 +42,6 @@ Get Substitutions: Don't like something? Get a personalized substitute recommend
 * Deployment instructions
 
 * ...
+
+## Contributing to KindKitchen
+  Trigger CircleCI pipeline by pushing to `main` branch
