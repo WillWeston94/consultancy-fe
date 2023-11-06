@@ -5,11 +5,12 @@ Rails.application.routes.draw do
   # root "articles#index"
 
   root "welcome#index"
-  get "/login", to: "users#login"
-  get "/register", to: "users#register"
-  get "/logout", to: "users#logout"
   
-  resources :users, only: [:create]
+  devise_for :users, controllers: {
+    registrations: "users/registrations",
+    sessions: "users/sessions",
+    omniauth_callbacks: "users/omniauth_callbacks"
+  }
   resources :recipes, only: [:index, :show]
   resources :recipes_advanced_search, only: [:index]
 end
