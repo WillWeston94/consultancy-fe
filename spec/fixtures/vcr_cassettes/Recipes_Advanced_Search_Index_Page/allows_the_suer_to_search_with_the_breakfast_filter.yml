@@ -39,11 +39,11 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 3dafc430-e410-40ad-b1f5-c2a40e5422e4
+      - 4a38cdf5-1dc5-4b21-bbd2-34eb382ef9bb
       X-Runtime:
-      - '0.574440'
+      - '0.562830'
       Server-Timing:
-      - start_processing.action_controller;dur=0.06, process_action.action_controller;dur=570.27
+      - start_processing.action_controller;dur=0.05, process_action.action_controller;dur=560.15
       Transfer-Encoding:
       - chunked
     body:
@@ -59,10 +59,10 @@ http_interactions:
         Kidney Bean Jambalaya","img_src":"https://spoonacular.com/recipeImages/782601-312x231.jpg"}},{"id":"795751","type":"searched_recipe","attributes":{"name":"Chicken
         Fajita Stuffed Bell Pepper","img_src":"https://spoonacular.com/recipeImages/795751-312x231.jpg"}},{"id":"766453","type":"searched_recipe","attributes":{"name":"Hummus
         and Za''atar","img_src":"https://spoonacular.com/recipeImages/766453-312x231.jpg"}}]}'
-  recorded_at: Sun, 05 Nov 2023 19:30:27 GMT
+  recorded_at: Sun, 05 Nov 2023 19:30:28 GMT
 - request:
     method: get
-    uri: http://localhost:3000/api/v1/search?q=Potato
+    uri: http://localhost:3000/api/v1/search?q=Cake%20breakfast
     body:
       encoding: US-ASCII
       string: ''
@@ -95,20 +95,29 @@ http_interactions:
       Vary:
       - Origin
       Etag:
-      - W/"930dcd925e093c03131b6e333406c4c8"
+      - W/"ca12dbcba0c9e3b9fab6ce9c88e25015"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 7a0228a6-2b9e-4a64-839b-fdccdaaac753
+      - a234b4ae-1748-4469-a9a1-bb1d8864ba79
       X-Runtime:
-      - '0.285602'
+      - '0.580617'
       Server-Timing:
-      - start_processing.action_controller;dur=0.06, process_action.action_controller;dur=282.46
+      - start_processing.action_controller;dur=0.06, process_action.action_controller;dur=577.87
       Transfer-Encoding:
       - chunked
     body:
-      encoding: ASCII-8BIT
-      string: !binary |-
-        eyJkYXRhIjpbeyJpZCI6IjY1Njk3MSIsInR5cGUiOiJzZWFyY2hlZF9yZWNpcGUiLCJhdHRyaWJ1dGVzIjp7Im5hbWUiOiJQb3RhdG8gTGVlayBTb3VwIiwiaW1nX3NyYyI6Imh0dHBzOi8vc3Bvb25hY3VsYXIuY29tL3JlY2lwZUltYWdlcy82NTY5NzEtMzEyeDIzMS5qcGcifX0seyJpZCI6IjY1NzAxMSIsInR5cGUiOiJzZWFyY2hlZF9yZWNpcGUiLCJhdHRyaWJ1dGVzIjp7Im5hbWUiOiJQb3RhdG8tQ2hlZXNlIFBpZSIsImltZ19zcmMiOiJodHRwczovL3Nwb29uYWN1bGFyLmNvbS9yZWNpcGVJbWFnZXMvNjU3MDExLTMxMngyMzEuanBnIn19LHsiaWQiOiI2MzY3MjkiLCJ0eXBlIjoic2VhcmNoZWRfcmVjaXBlIiwiYXR0cmlidXRlcyI6eyJuYW1lIjoiUG90YXRvIENoaXAgQnJvd25pZXMiLCJpbWdfc3JjIjoiaHR0cHM6Ly9zcG9vbmFjdWxhci5jb20vcmVjaXBlSW1hZ2VzLzYzNjcyOS0zMTJ4MjMxLmpwZyJ9fSx7ImlkIjoiNjU2OTIxIiwidHlwZSI6InNlYXJjaGVkX3JlY2lwZSIsImF0dHJpYnV0ZXMiOnsibmFtZSI6IlBvdGF0byBhbmQgTGVlayBHcmF0aW4iLCJpbWdfc3JjIjoiaHR0cHM6Ly9zcG9vbmFjdWxhci5jb20vcmVjaXBlSW1hZ2VzLzY1NjkyMS0zMTJ4MjMxLmpwZyJ9fSx7ImlkIjoiNjU2OTYyIiwidHlwZSI6InNlYXJjaGVkX3JlY2lwZSIsImF0dHJpYnV0ZXMiOnsibmFtZSI6IlBvdGF0byBHcmF0aW4gd2l0aCBHb2F0IENoZWVzZSIsImltZ19zcmMiOiJodHRwczovL3Nwb29uYWN1bGFyLmNvbS9yZWNpcGVJbWFnZXMvNjU2OTYyLTMxMngyMzEuanBnIn19LHsiaWQiOiI2NTY5MjUiLCJ0eXBlIjoic2VhcmNoZWRfcmVjaXBlIiwiYXR0cmlidXRlcyI6eyJuYW1lIjoiUG90YXRvIGFuZCBTY2FsbGlvbiBCcmVhZCBSb2xscyIsImltZ19zcmMiOiJodHRwczovL3Nwb29uYWN1bGFyLmNvbS9yZWNpcGVJbWFnZXMvNjU2OTI1LTMxMngyMzEuanBnIn19LHsiaWQiOiI2NTY5MTUiLCJ0eXBlIjoic2VhcmNoZWRfcmVjaXBlIiwiYXR0cmlidXRlcyI6eyJuYW1lIjoiUG90YXRvIGFuZCBHcmVlbiBCZWFuIFNpZGUgU2FsYWQiLCJpbWdfc3JjIjoiaHR0cHM6Ly9zcG9vbmFjdWxhci5jb20vcmVjaXBlSW1hZ2VzLzY1NjkxNS0zMTJ4MjMxLmpwZyJ9fSx7ImlkIjoiNjU3MDAwIiwidHlwZSI6InNlYXJjaGVkX3JlY2lwZSIsImF0dHJpYnV0ZXMiOnsibmFtZSI6IlBvdGF0byBTb3VwIFdpdGggUGVwcGVycyBhbmQgT2xpdmVzIiwiaW1nX3NyYyI6Imh0dHBzOi8vc3Bvb25hY3VsYXIuY29tL3JlY2lwZUltYWdlcy82NTcwMDAtMzEyeDIzMS5qcGcifX0seyJpZCI6IjEwOTYzMjMiLCJ0eXBlIjoic2VhcmNoZWRfcmVjaXBlIiwiYXR0cmlidXRlcyI6eyJuYW1lIjoiUG90YXRvIFx1MDAyNiBMZWVrIFNvdXAgd2l0aCBSb2FzdGVkIEJlZXRzIiwiaW1nX3NyYyI6Imh0dHBzOi8vc3Bvb25hY3VsYXIuY29tL3JlY2lwZUltYWdlcy8xMDk2MzIzLTMxMngyMzEuanBnIn19LHsiaWQiOiIxNjk3NTQ5IiwidHlwZSI6InNlYXJjaGVkX3JlY2lwZSIsImF0dHJpYnV0ZXMiOnsibmFtZSI6IlBvdGF0byBhbmQgTGVlayBTb3VwIOKAkyBQb3RhZ2UgUGFybWVudGllciIsImltZ19zcmMiOiJodHRwczovL3Nwb29uYWN1bGFyLmNvbS9yZWNpcGVJbWFnZXMvMTY5NzU0OS0zMTJ4MjMxLmpwZyJ9fV19
-  recorded_at: Sun, 05 Nov 2023 19:30:28 GMT
+      encoding: UTF-8
+      string: '{"data":[{"id":"63227","type":"searched_recipe","attributes":{"name":"Almond
+        Coffee Cake","img_src":"https://spoonacular.com/recipeImages/63227-312x231.jpg"}},{"id":"657274","type":"searched_recipe","attributes":{"name":"Pumpkin
+        Coffee Cake","img_src":"https://spoonacular.com/recipeImages/657274-312x231.jpg"}},{"id":"636545","type":"searched_recipe","attributes":{"name":"Buttermilk
+        Coffee Cake","img_src":"https://spoonacular.com/recipeImages/636545-312x231.jpg"}},{"id":"1697671","type":"searched_recipe","attributes":{"name":"Sour
+        Cream Coffee Cake","img_src":"https://spoonacular.com/recipeImages/1697671-312x231.jpg"}},{"id":"63225","type":"searched_recipe","attributes":{"name":"Fruit
+        Filled Coffee Cake","img_src":"https://spoonacular.com/recipeImages/63225-312x231.jpg"}},{"id":"655406","type":"searched_recipe","attributes":{"name":"Pear
+        and Walnut Coffee Cake","img_src":"https://spoonacular.com/recipeImages/655406-312x231.jpg"}},{"id":"648939","type":"searched_recipe","attributes":{"name":"Kitchen
+        Cabinet Coffee Cake","img_src":"https://spoonacular.com/recipeImages/648939-312x231.jpg"}},{"id":"664964","type":"searched_recipe","attributes":{"name":"Warm
+        Mixed Berry Crumb Cake","img_src":"https://spoonacular.com/recipeImages/664964-312x231.jpg"}},{"id":"639456","type":"searched_recipe","attributes":{"name":"Cinnamon
+        Eggless Coffee Cake","img_src":"https://spoonacular.com/recipeImages/639456-312x231.jpg"}},{"id":"657917","type":"searched_recipe","attributes":{"name":"Raspberry
+        Walnut Coffee Cake","img_src":"https://spoonacular.com/recipeImages/657917-312x231.jpg"}}]}'
+  recorded_at: Sun, 05 Nov 2023 19:30:29 GMT
 recorded_with: VCR 6.2.0
