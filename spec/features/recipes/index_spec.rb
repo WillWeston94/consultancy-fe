@@ -16,7 +16,6 @@ RSpec.describe "Recipes Index Page" do
     click_button "Search"
 
     expect(page.status_code).to eq 200
-    #Interesting, it defaults to 10 results.  This will need to be refactored to properly display all recipes
     expect(current_path).to eq(recipes_path)
     expect(page).to have_content("Potato Leek Soup")
     expect(page).to have_content("Potato Chip Brownies")
@@ -45,14 +44,16 @@ RSpec.describe "Recipes Index Page" do
 
   end
 
-  it "sends the user to the recipe advancaed search page after clicking the button", :vcr do
+  it "sends the user to the recipe advanced search page after clicking the advanced search button", :vcr do
     visit "/recipes"
     click_button("Advanced Search")
 
     expect(current_path).to eq(recipes_advanced_search_index_path)
   end
 
-  #Will need to include tests about images
-  #Will need to include search bar on search results page 
-  #Will need to include advanced search button on search results page
+  xit "sends the user to the show page when clicking on the image" do
+  end
+
+  xit "sends the user to the show page when clicking on the link" do
+  end
 end
