@@ -11,4 +11,14 @@ RSpec.describe RecipeFacade do
         expect(recipes.first).to be_a(Recipe)
     end
   end
+
+  describe "#combine filters" do
+    it "returns a string to be inputted into the search query" do
+      recipe_facade = RecipeAdvancedSearchFacade.new("apple", { "dairy_free" => "1", "vegetarian" => "1"})
+      
+      no_underscores = recipe_facade.send(:combine_filters)
+
+      expect(no_underscores).to eq("apple dairy free vegetarian")
+    end
+  end
 end

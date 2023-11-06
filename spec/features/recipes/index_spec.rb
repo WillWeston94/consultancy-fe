@@ -52,12 +52,6 @@ RSpec.describe "Recipes Index Page" do
     expect(current_path).to eq(recipes_advanced_search_index_path)
   end
 
-  xit "displays an image for every recipe" do
-  end
-
-  xit "redirects the user to the recipe show page when clicking on the recipe's image or its name" do
-  end
-
   #Will need to include tests about images
   #Will need to include search bar on search results page 
   #Will need to include advanced search button on search results page
