@@ -23,6 +23,8 @@ class Users::SessionsController < Devise::SessionsController
   end
 
   def after_sign_in_path_for(resource_or_scope)
+    # this is a way to track where a scope should be returned to using session["#{scope}_return_to"],
+    # but realistically we can probably just deposit them to their dashboard or root_path
     stored_location_for(resource_or_scope) || root_path
   end
 
