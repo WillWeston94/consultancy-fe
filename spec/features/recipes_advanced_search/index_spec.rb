@@ -17,7 +17,7 @@ RSpec.describe "Recipes Advanced Search Index Page" do
 
     expect(current_path).to eq(recipes_advanced_search_index_path)
     expect(page).to have_content("Potato Leek Soup")
-    expect(page).to have_content("Pan Roasted New Potatoes With Fresh Herbs")
+    expect(page).to have_content("Trinidadian Chicken Potato Curry")
   end
 
   it 'allows the user to search with the breakfast filter', :vcr do
@@ -97,7 +97,7 @@ RSpec.describe "Recipes Advanced Search Index Page" do
 
     expect(current_path).to eq(recipes_advanced_search_index_path)
     expect(page).to have_content("Larb Salad")
-    expect(page).to have_content("Simple Caesar Salad")
+    expect(page).to have_content("Easy 7 Layer Salad Side Dish")
   end
 
   it "allows the user to use the soup checkbox", :vcr do
@@ -135,7 +135,7 @@ RSpec.describe "Recipes Advanced Search Index Page" do
 
     expect(current_path).to eq(recipes_advanced_search_index_path)
     expect(page).to have_content("Mop Sauce")
-    expect(page).to have_content("Blackberry and Figs Chutney")
+    expect(page).to have_content("Pork Chops With Blackberry Port Sauce")
   end
 
   it "allows the user to use the marinade checkbox", :vcr do
@@ -267,7 +267,7 @@ RSpec.describe "Recipes Advanced Search Index Page" do
     expect(page).to have_content("Korean Perilla Pesto")
   end
 
-  xit "allows the user to use the dairy free checkbox", :vcr do
+  it "allows the user to use the dairy free checkbox", :vcr do
     visit "/recipes_advanced_search"
 
     within(".advanced-search-form") do
@@ -276,10 +276,11 @@ RSpec.describe "Recipes Advanced Search Index Page" do
     end
 
     expect(current_path).to eq(recipes_advanced_search_index_path)
-    expect(page).to have_content("Placeholder")
+    expect(page).to have_content("Slow Cooker Beef Stew")
+    expect(page).to have_content("Chicken Liver Salad")
   end
 
-  xit "allows the user to use the egg free checkbox", :vcr do
+  it "allows the user to use the egg free checkbox", :vcr do
     visit "/recipes_advanced_search"
 
     within(".advanced-search-form") do
@@ -288,10 +289,11 @@ RSpec.describe "Recipes Advanced Search Index Page" do
     end
 
     expect(current_path).to eq(recipes_advanced_search_index_path)
-    expect(page).to have_content("Placeholder")
+    expect(page).to have_content("Turkey Tomato Cheese Pizza")
+    expect(page).to have_content("Peanut Butter and Jelly Smoothie")
   end
 
-  xit "allows the user to use the gluten free checkbox", :vcr do
+  it "allows the user to use the gluten free checkbox", :vcr do
     visit "/recipes_advanced_search"
 
     within(".advanced-search-form") do
@@ -300,10 +302,11 @@ RSpec.describe "Recipes Advanced Search Index Page" do
     end
 
     expect(current_path).to eq(recipes_advanced_search_index_path)
-    expect(page).to have_content("Placeholder")
+    expect(page).to have_content("Garlicky Kale")
+    expect(page).to have_content("Salmon Caesar Salad")
   end
 
-  xit "allows the user to use the grain free checkbox", :vcr do
+  it "allows the user to use the grain free checkbox", :vcr do
     visit "/recipes_advanced_search"
 
     within(".advanced-search-form") do
@@ -312,7 +315,8 @@ RSpec.describe "Recipes Advanced Search Index Page" do
     end
 
     expect(current_path).to eq(recipes_advanced_search_index_path)
-    expect(page).to have_content("Placeholder")
+    expect(page).to have_content("Red Lentil Soup with Chicken and Turnips")
+    expect(page).to have_content("Delightful Kale and Cabbage Slaw")
   end
 
   it "allows the user to use the peanut free checkbox", :vcr do
@@ -329,7 +333,7 @@ RSpec.describe "Recipes Advanced Search Index Page" do
     expect(page).to have_content("Salmon Quinoa Risotto")
   end
 
-  xit "allows the user to use the seafood free checkbox", :vcr do
+  it "allows the user to use the seafood free checkbox", :vcr do
     visit "/recipes_advanced_search"
 
     within(".advanced-search-form") do
@@ -338,10 +342,11 @@ RSpec.describe "Recipes Advanced Search Index Page" do
     end
 
     expect(current_path).to eq(recipes_advanced_search_index_path)
-    expect(page).to have_content("Placeholder")
+    expect(page).to have_content("Chicken Fajita Stuffed Bell Pepper")
+    expect(page).to have_content("Nigerian Snail Stew")
   end
 
-  xit "allows the user to use the sesame free checkbox", :vcr do
+  it "allows the user to use the sesame free checkbox", :vcr do
     visit "/recipes_advanced_search"
 
     within(".advanced-search-form") do
@@ -350,10 +355,11 @@ RSpec.describe "Recipes Advanced Search Index Page" do
     end
 
     expect(current_path).to eq(recipes_advanced_search_index_path)
-    expect(page).to have_content("Placeholder")
+    expect(page).to have_content("Berry Banana Breakfast Smoothie")
+    expect(page).to have_content("Lebanese Tabouleh")
   end
 
-  xit "allows the user to use the shellfish free checkbox", :vcr do
+  it "allows the user to use the shellfish free checkbox", :vcr do
     visit "/recipes_advanced_search"
 
     within(".advanced-search-form") do
@@ -362,10 +368,11 @@ RSpec.describe "Recipes Advanced Search Index Page" do
     end
 
     expect(current_path).to eq(recipes_advanced_search_index_path)
-    expect(page).to have_content("Placeholder")
+    expect(page).to have_content("Butternut Squash Frittata")
+    expect(page).to have_content("Salmon Quinoa Risotto")
   end
 
-  xit "allows the user to use the soy free checkbox", :vcr do
+  it "allows the user to use the soy free checkbox", :vcr do
     visit "/recipes_advanced_search"
 
     within(".advanced-search-form") do
@@ -374,10 +381,11 @@ RSpec.describe "Recipes Advanced Search Index Page" do
     end
 
     expect(current_path).to eq(recipes_advanced_search_index_path)
-    expect(page).to have_content("Placeholder")
+    expect(page).to have_content("Turkey Tomato Cheese Pizza")
+    expect(page).to have_content("Ground Turkey Stuffed Peppers")
   end
 
-  xit "allows the user to use the sulfite free checkbox", :vcr do
+  it "allows the user to use the sulfite free checkbox", :vcr do
     visit "/recipes_advanced_search"
 
     within(".advanced-search-form") do
@@ -386,10 +394,11 @@ RSpec.describe "Recipes Advanced Search Index Page" do
     end
 
     expect(current_path).to eq(recipes_advanced_search_index_path)
-    expect(page).to have_content("Placeholder")
+    expect(page).to have_content("Slow Cooker Beef Stew")
+    expect(page).to have_content("Detox slaw")
   end
 
-  xit "allows the user to use the tree nut free checkbox", :vcr do
+  it "allows the user to use the tree nut free checkbox", :vcr do
     visit "/recipes_advanced_search"
 
     within(".advanced-search-form") do
@@ -398,10 +407,11 @@ RSpec.describe "Recipes Advanced Search Index Page" do
     end
 
     expect(current_path).to eq(recipes_advanced_search_index_path)
-    expect(page).to have_content("Placeholder")
+    expect(page).to have_content("Berry Banana Breakfast Smoothie")
+    expect(page).to have_content("Brown Butter Twice Baked Sweet Potatoes")
   end
 
-  xit "allows the user to use the wheat free checkbox", :vcr do
+  it "allows the user to use the wheat free checkbox", :vcr do
     visit "/recipes_advanced_search"
 
     within(".advanced-search-form") do
@@ -410,10 +420,11 @@ RSpec.describe "Recipes Advanced Search Index Page" do
     end
 
     expect(current_path).to eq(recipes_advanced_search_index_path)
-    expect(page).to have_content("Placeholder")
+    expect(page).to have_content("Chicken Fajita Stuffed Bell Pepper")
+    expect(page).to have_content("My Favorite Navy Bean Soup")
   end
 
-  xit "allows the user to search when using many filters, as well as an intolerance", :vcr do
+  it "allows the user to search when using many filters, as well as an intolerance", :vcr do
     visit "/recipes_advanced_search"
 
     within(".advanced-search-form") do
@@ -425,6 +436,22 @@ RSpec.describe "Recipes Advanced Search Index Page" do
     end
 
     expect(current_path).to eq(recipes_advanced_search_index_path)
-    expect(page).to have_content("Placeholder")
+    expect(page).to have_content("Breakfast Pretzels")
+    expect(page).to have_content("Miniature Vegetable Quiches")
+  end
+
+  it "allows ths user to search when selecting multiple intolerances", :vcr do
+    visit "/recipes_advanced_search"
+
+    within(".advanced-search-form") do
+      fill_in :advanced_search, with: "Egg"
+      find(:css, "#dairy").set(true)
+      find(:css, "#soy").set(true)
+      click_button "Search"
+    end
+
+    expect(current_path).to eq(recipes_advanced_search_index_path)
+    expect(page).to have_content("Egg Salad Wrap")
+    expect(page).to have_content("Bing's Banana Cake")
   end
 end

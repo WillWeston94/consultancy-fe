@@ -15,7 +15,7 @@ class RecipesAdvancedSearchController < ApplicationController
   end
 
   def filtering_intolerances(params)
-    params.slice(:dairy, :egg, :gluten, :grain, :peanut, :seafood, :sesame, :shellfish, :soy, :sulfite, :tree_nut)
+    params.slice(:dairy, :egg, :gluten, :grain, :peanut, :seafood, :sesame, :shellfish, :soy, :sulfite, :tree_nut, :wheat)
   end
   
 end
