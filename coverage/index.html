@@ -14,7 +14,7 @@
       <img src="./assets/0.12.3/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" class="hide">
-      <div class="timestamp">Generated <abbr class="timeago" title="2023-11-07T00:19:22-07:00">2023-11-07T00:19:22-07:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2023-11-07T11:26:43-07:00">2023-11-07T11:26:43-07:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
@@ -23,14 +23,14 @@
     <span class="group_name">All Files</span>
     (<span class="covered_percent">
       <span class="green">
-  100.0%
+  98.9%
 </span>
 
      </span>
      covered at
      <span class="covered_strength">
        <span class="green">
-         45.05
+         57.42
        </span>
     </span> hits/line
     )
@@ -39,15 +39,15 @@
   <a name="AllFiles"></a>
 
   <div>
-    <b>29</b> files in total.
+    <b>30</b> files in total.
   </div>
 
   <div class="t-line-summary">
-    <b>536</b> relevant lines,
-    <span class="green"><b>536</b> lines covered</span> and
-    <span class="red"><b>0</b> lines missed. </span>
+    <b>547</b> relevant lines,
+    <span class="green"><b>541</b> lines covered</span> and
+    <span class="red"><b>6</b> lines missed. </span>
     (<span class="green">
-  100.0%
+  98.9%
 </span>
 )
   </div>
@@ -183,11 +183,11 @@
           <tr class="t-file">
             <td class="strong t-file__name"><a href="#0342440570c1fcda8ef238a6469316ff478d1b4d" class="src_link" title="app/poros/recipe.rb">app/poros/recipe.rb</a></td>
             <td class="green strong cell--number t-file__coverage">100.00 %</td>
-            <td class="cell--number">7</td>
-            <td class="cell--number">5</td>
-            <td class="cell--number">5</td>
+            <td class="cell--number">8</td>
+            <td class="cell--number">6</td>
+            <td class="cell--number">6</td>
             <td class="cell--number">0</td>
-            <td class="cell--number">2904.20</td>
+            <td class="cell--number">3630.00</td>
             
           </tr>
         
@@ -314,10 +314,21 @@
         
           <tr class="t-file">
             <td class="strong t-file__name"><a href="#94485d590d263efd0623726b4dc09aa81d636aba" class="src_link" title="spec/features/recipes/index_spec.rb">spec/features/recipes/index_spec.rb</a></td>
+            <td class="yellow strong cell--number t-file__coverage">84.62 %</td>
+            <td class="cell--number">69</td>
+            <td class="cell--number">39</td>
+            <td class="cell--number">33</td>
+            <td class="cell--number">6</td>
+            <td class="cell--number">0.85</td>
+            
+          </tr>
+        
+          <tr class="t-file">
+            <td class="strong t-file__name"><a href="#59657be9e130743818596b50f80af4576b6f9a35" class="src_link" title="spec/features/recipes/show_spec.rb">spec/features/recipes/show_spec.rb</a></td>
             <td class="green strong cell--number t-file__coverage">100.00 %</td>
-            <td class="cell--number">59</td>
-            <td class="cell--number">33</td>
-            <td class="cell--number">33</td>
+            <td class="cell--number">5</td>
+            <td class="cell--number">2</td>
+            <td class="cell--number">2</td>
             <td class="cell--number">0</td>
             <td class="cell--number">1.00</td>
             
@@ -326,9 +337,9 @@
           <tr class="t-file">
             <td class="strong t-file__name"><a href="#61224fd2d66c62c1fc6b95b8acaeedb9897bbca4" class="src_link" title="spec/features/recipes_advanced_search/index_spec.rb">spec/features/recipes_advanced_search/index_spec.rb</a></td>
             <td class="green strong cell--number t-file__coverage">100.00 %</td>
-            <td class="cell--number">457</td>
-            <td class="cell--number">280</td>
-            <td class="cell--number">280</td>
+            <td class="cell--number">465</td>
+            <td class="cell--number">282</td>
+            <td class="cell--number">282</td>
             <td class="cell--number">0</td>
             <td class="cell--number">1.00</td>
             
@@ -2325,8 +2336,8 @@
     
 
     <div class="t-line-summary">
-      <b>5</b> relevant lines.
-      <span class="green"><b>5</b> lines covered</span> and
+      <b>6</b> relevant lines.
+      <span class="green"><b>6</b> lines covered</span> and
       <span class="red"><b>0</b> lines missed.</span>
     </div>
 
@@ -2355,7 +2366,7 @@
 
             
 
-            <code class="ruby">  attr_reader :name, :img_src</code>
+            <code class="ruby">  attr_reader :id, :name, :img_src</code>
           </li>
         </div>
       
@@ -2377,7 +2388,7 @@
 
             
 
-            <code class="ruby">    @name = data[:attributes][:name]</code>
+            <code class="ruby">    @id = data[:id]</code>
           </li>
         </div>
       
@@ -2388,12 +2399,23 @@
 
             
 
+            <code class="ruby">    @name = data[:attributes][:name]</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="7259" data-linenumber="6">
+            <span class="hits">7259</span>
+            
+
+            
+
             <code class="ruby">    @img_src = data[:attributes][:img_src]</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="6">
+          <li class="never" data-hits="" data-linenumber="7">
             
             
 
@@ -2404,7 +2426,7 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="7">
+          <li class="never" data-hits="" data-linenumber="8">
             
             
 
@@ -5107,8 +5129,8 @@
   <div class="header">
     <h3>spec/features/recipes/index_spec.rb</h3>
     <h4>
-      <span class="green">
-  100.0%
+      <span class="yellow">
+  84.62%
 </span>
 
       lines covered
@@ -5117,9 +5139,9 @@
     
 
     <div class="t-line-summary">
-      <b>33</b> relevant lines.
+      <b>39</b> relevant lines.
       <span class="green"><b>33</b> lines covered</span> and
-      <span class="red"><b>0</b> lines missed.</span>
+      <span class="red"><b>6</b> lines missed.</span>
     </div>
 
     
@@ -5752,12 +5774,122 @@
 
             
 
-            <code class="ruby">  xit &quot;sends the user to the show page when clicking on the link&quot; do</code>
+            <code class="ruby">  xit &quot;sends the user to the show page when clicking on the text&quot;, :vcr do</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="58">
+          <li class="missed" data-hits="0" data-linenumber="58">
+            
+            
+
+            
+
+            <code class="ruby">    visit &quot;/&quot;</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="59">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="missed" data-hits="0" data-linenumber="60">
+            
+            
+
+            
+
+            <code class="ruby">    fill_in :search, with: &quot;Nigerian Snail Stew&quot;</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="missed" data-hits="0" data-linenumber="61">
+            
+            
+
+            
+
+            <code class="ruby">    click_button &quot;Search&quot;</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="62">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="missed" data-hits="0" data-linenumber="63">
+            
+            
+
+            
+
+            <code class="ruby">    within(&quot;.recipe-card .card-title a&quot;) do</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="missed" data-hits="0" data-linenumber="64">
+            
+            
+
+            
+
+            <code class="ruby">      click</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="65">
+            
+            
+
+            
+
+            <code class="ruby">    end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="66">
+            
+            
+
+            
+
+            <code class="ruby">  </code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="missed" data-hits="0" data-linenumber="67">
+            
+            
+
+            
+
+            <code class="ruby">    expect(current_path).to eq(recipe_path)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="68">
             
             
 
@@ -5768,7 +5900,93 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="59">
+          <li class="never" data-hits="" data-linenumber="69">
+            
+            
+
+            
+
+            <code class="ruby">end</code>
+          </li>
+        </div>
+      
+    </ol>
+  </pre>
+</div>
+
+      
+        <div class="source_table" id="59657be9e130743818596b50f80af4576b6f9a35">
+  <div class="header">
+    <h3>spec/features/recipes/show_spec.rb</h3>
+    <h4>
+      <span class="green">
+  100.0%
+</span>
+
+      lines covered
+    </h4>
+
+    
+
+    <div class="t-line-summary">
+      <b>2</b> relevant lines.
+      <span class="green"><b>2</b> lines covered</span> and
+      <span class="red"><b>0</b> lines missed.</span>
+    </div>
+
+    
+
+  </div>
+
+  <pre>
+    <ol>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="1">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">require &quot;rails_helper&quot;</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="2">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="3">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">RSpec.describe &quot;Recipes Index Page&quot; do</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="4">
+            
+            
+
+            
+
+            <code class="ruby">  </code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="5">
             
             
 
@@ -5797,8 +6015,8 @@
     
 
     <div class="t-line-summary">
-      <b>280</b> relevant lines.
-      <span class="green"><b>280</b> lines covered</span> and
+      <b>282</b> relevant lines.
+      <span class="green"><b>282</b> lines covered</span> and
       <span class="red"><b>0</b> lines missed.</span>
     </div>
 
@@ -10827,6 +11045,94 @@
       
         <div>
           <li class="never" data-hits="" data-linenumber="457">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="458">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">  xit &quot;sends the user to the show page when clicking on the image&quot; do</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="459">
+            
+            
+
+            
+
+            <code class="ruby">  end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="460">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="461">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">  xit &quot;sends the user to the show page when clicking on the link&quot; do</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="462">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="463">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="464">
+            
+            
+
+            
+
+            <code class="ruby">  end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="465">
             
             
 
