@@ -2,5 +2,11 @@
 <br><img src="<%= @recipe.show_recipe.img_src %>" alt="<%= @recipe.show_recipe.name %>">
 <br>Servings: <%= @recipe.show_recipe.servings %>
 <br>Prep Time: <%= @recipe.show_recipe.cooking_time %> Minutes
-<br>Ingredients: <%= @recipe.show_recipe.ingredients %>
-<br>Instructions: <%= @recipe.show_recipe.instructions %>
+<br>Ingredients: <% @recipe.show_recipe.ingredients.each do |ingredient| %>
+                    <li><%= ingredient %></li>
+                    <% end %>
+<br>Instructions: <% @recipe.show_recipe.instructions.each do |instruction| %>
+                    <% instruction.each do |number, step| %>
+                      <br><%= number %>. <%= step %>
+                    <% end %>
+                  <% end %>
