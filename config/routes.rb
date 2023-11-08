@@ -13,4 +13,7 @@ Rails.application.routes.draw do
   }
   resources :recipes, only: [:index, :show]
   resources :recipes_advanced_search, only: [:index]
+  resources :dashboard, only: [:index]
+  resources :user_recipes, only: [:create]
+  delete "/user_recipes", to: "user_recipes#destroy" # hand-rolled to avoid needing an ID
 end

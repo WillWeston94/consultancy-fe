@@ -1,0 +1,343 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://localhost:3000/api/v1/search/663931
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.11
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - '0'
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Type:
+      - application/json; charset=utf-8
+      Vary:
+      - Origin
+      Etag:
+      - W/"e02f903dc5fae5de8899f11a9a8b67d2"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 690add92-97a9-4073-a456-deb2930a2f5b
+      X-Runtime:
+      - '0.552218'
+      Server-Timing:
+      - start_processing.action_controller;dur=0.52, process_action.action_controller;dur=548.03
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"663931","type":"recipe_details","attributes":{"name":"Tuna
+        Mexi Melts","img_src":"https://spoonacular.com/recipeImages/663931-556x370.jpg","servings":6,"readyInMinutes":45,"servingSize_grams":329,"instructions":[{"1":"Well
+        whip up the picante first. To do this, go ahead and add all the ingredients
+        into your food processor. Zip it up good and then add in some salt to taste.Next
+        up, grab your french loaf and slice it into 1 slices."},{"2":"Brush the melted
+        butter over your slices of bread and then sprinkle on some cumin, chile powder,
+        and garlic powder."},{"3":"Add all the melt ingredients with the exception
+        of the pepper jack cheese to a bowl and mix it up good. Now grab your bread
+        and lop a large spoonful of the tuna mixture on each piece. Top them all off
+        with a slice of pepper jack cheese. Throw your sandwiches into an oven heated
+        to 350 degrees and let them heat up for about 10 to 15 minutes or until your
+        cheese is melted and bubbling."}],"ingredients":["5 tablespoons of Butter,
+        Melted","1/4 teaspoon of Chile Powder","1 bunch Small of Cilantro","1/4 teaspoon
+        of Cumin","1 loaf of French Bread","Garlic Powder for Sprinkling","2 Green
+        Onions, Chopped","1/2 Jalapeno; Seeded, Cored and Chopped","1 clove of Garlic
+        1 Lime, Juiced","1/4 teaspoon of Paprika","8 ounces of Pepper Jack Cheese,
+        Sliced","3/4 cup of your Picante","5 Roma Tomatoes, Roughly Chopped","1 teaspoon
+        Salt","3/4 cup of Shredded Cheddar Cheese","1 cup Sour cream or yogurt","360
+        grams Tuna"]}}}'
+  recorded_at: Wed, 08 Nov 2023 04:03:38 GMT
+- request:
+    method: post
+    uri: http://localhost:3000/api/v1/user_recipes?recipe_id=663931&user_id=52
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.11
+      Content-Length:
+      - '0'
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - '0'
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Type:
+      - application/json; charset=utf-8
+      Vary:
+      - Origin
+      Etag:
+      - W/"44136fa355b3678a1146ad16f7e8649e"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - c2ecf2e0-cd78-4fcc-a638-35d5a006b0ae
+      X-Runtime:
+      - '0.007644'
+      Server-Timing:
+      - start_processing.action_controller;dur=0.24, sql.active_record;dur=1.54, process_action.action_controller;dur=4.08
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: "{}"
+  recorded_at: Wed, 08 Nov 2023 04:03:38 GMT
+- request:
+    method: get
+    uri: http://localhost:3000/api/v1/search/663931
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.11
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - '0'
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Type:
+      - application/json; charset=utf-8
+      Vary:
+      - Origin
+      Etag:
+      - W/"e02f903dc5fae5de8899f11a9a8b67d2"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 253a32cb-b7ae-4044-b8e2-3f0d3bb0ec50
+      X-Runtime:
+      - '0.558475'
+      Server-Timing:
+      - start_processing.action_controller;dur=0.05, process_action.action_controller;dur=555.81
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"663931","type":"recipe_details","attributes":{"name":"Tuna
+        Mexi Melts","img_src":"https://spoonacular.com/recipeImages/663931-556x370.jpg","servings":6,"readyInMinutes":45,"servingSize_grams":329,"instructions":[{"1":"Well
+        whip up the picante first. To do this, go ahead and add all the ingredients
+        into your food processor. Zip it up good and then add in some salt to taste.Next
+        up, grab your french loaf and slice it into 1 slices."},{"2":"Brush the melted
+        butter over your slices of bread and then sprinkle on some cumin, chile powder,
+        and garlic powder."},{"3":"Add all the melt ingredients with the exception
+        of the pepper jack cheese to a bowl and mix it up good. Now grab your bread
+        and lop a large spoonful of the tuna mixture on each piece. Top them all off
+        with a slice of pepper jack cheese. Throw your sandwiches into an oven heated
+        to 350 degrees and let them heat up for about 10 to 15 minutes or until your
+        cheese is melted and bubbling."}],"ingredients":["5 tablespoons of Butter,
+        Melted","1/4 teaspoon of Chile Powder","1 bunch Small of Cilantro","1/4 teaspoon
+        of Cumin","1 loaf of French Bread","Garlic Powder for Sprinkling","2 Green
+        Onions, Chopped","1/2 Jalapeno; Seeded, Cored and Chopped","1 clove of Garlic
+        1 Lime, Juiced","1/4 teaspoon of Paprika","8 ounces of Pepper Jack Cheese,
+        Sliced","3/4 cup of your Picante","5 Roma Tomatoes, Roughly Chopped","1 teaspoon
+        Salt","3/4 cup of Shredded Cheddar Cheese","1 cup Sour cream or yogurt","360
+        grams Tuna"]}}}'
+  recorded_at: Wed, 08 Nov 2023 04:03:39 GMT
+- request:
+    method: get
+    uri: http://localhost:3000/api/v1/user_recipes?user_id=52
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.11
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - '0'
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Type:
+      - application/json; charset=utf-8
+      Vary:
+      - Origin
+      Etag:
+      - W/"f221bd625a15194845e5941d0774b91c"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 71e96797-e680-4f88-9cb8-057151599ce2
+      X-Runtime:
+      - '0.586270'
+      Server-Timing:
+      - start_processing.action_controller;dur=0.06, sql.active_record;dur=0.60, process_action.action_controller;dur=582.38
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"data":[{"id":"663931","type":"searched_recipe","attributes":{"name":"Tuna
+        Mexi Melts","img_src":"https://spoonacular.com/recipeImages/663931-556x370.jpg"}}]}'
+  recorded_at: Wed, 08 Nov 2023 04:03:40 GMT
+- request:
+    method: delete
+    uri: http://localhost:3000/api/v1/user_recipes?recipe_id=663931&user_id=52
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.11
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - '0'
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Type:
+      - application/json; charset=utf-8
+      Vary:
+      - Origin
+      Etag:
+      - W/"44136fa355b3678a1146ad16f7e8649e"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 5b0ffd5f-f690-4c9b-aaa4-964714fcbb28
+      X-Runtime:
+      - '0.009439'
+      Server-Timing:
+      - start_processing.action_controller;dur=0.09, sql.active_record;dur=2.33, instantiation.active_record;dur=0.10,
+        process_action.action_controller;dur=5.69
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: "{}"
+  recorded_at: Wed, 08 Nov 2023 04:03:40 GMT
+- request:
+    method: get
+    uri: http://localhost:3000/api/v1/user_recipes?user_id=52
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.11
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - '0'
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Type:
+      - application/json; charset=utf-8
+      Vary:
+      - Origin
+      Etag:
+      - W/"8fe32e407a1038ee38753b70e5374b3a"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 939c8143-96c0-4e61-86c8-4b56bb6d059c
+      X-Runtime:
+      - '0.003925'
+      Server-Timing:
+      - start_processing.action_controller;dur=0.07, sql.active_record;dur=0.53, process_action.action_controller;dur=1.00
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"data":[]}'
+  recorded_at: Wed, 08 Nov 2023 04:03:40 GMT
+recorded_with: VCR 6.2.0
