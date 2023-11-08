@@ -1,3 +1,235 @@
+<!DOCTYPE html>
+
+<html lang="en-us"><head>
+  <meta charset="utf-8">
+  <title>Kind Kitchen</title>
+
+  <!-- mobile responsive meta -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="This is meta description">
+  <meta name="author" content="Themefisher">
+  <meta name="generator" content="Hugo 0.74.3" />
+  
+  <!-- theme meta -->
+  <meta name="theme-name" content="reader" />
+
+  <!-- plugins -->
+  <link rel="stylesheet" href="plugins/bootstrap/bootstrap.min.css">
+  <link rel="stylesheet" href="plugins/themify-icons/themify-icons.css">
+  <link rel="stylesheet" href="plugins/slick/slick.css">
+
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="css/style.css" media="screen">
+
+  <!--Favicon-->
+  <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+  <link rel="icon" href="images/favicon.png" type="image/x-icon">
+
+  <meta property="og:title" content="Reader | Hugo Personal Blog Template" />
+  <meta property="og:description" content="This is meta description" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="" />
+  <meta property="og:updated_time" content="2020-03-15T15:40:24+06:00" />
+</head>
+<body>
+  <!-- navigation -->
+<header class="navigation fixed-top">
+  <div class="container">
+    <nav class="navbar navbar-expand-lg navbar-white">
+      <a class="navbar-brand order-1" href="index.html">
+        <h2>KindKitchen</h2>
+      </a>
+      <div class="collapse navbar-collapse text-center order-lg-2 order-3" id="navigation">
+        <ul class="navbar-nav mx-auto">
+
+        <ul class="navbar-nav ms-auto">
+          <% if current_user %>
+            <li class="nav-item">
+              <%= link_to "My Dashboard", dashboard_index_path, class: "nav-link" %>
+            </li>
+            <li class="nav-item">
+              <%= button_to "Log Out", destroy_user_session_path, method: :delete, data: {turbo: false}, class: "nav-link" %>
+            </li>
+          <% else %>
+            <li class="nav-item">
+              <%#= link_to "Register", register_path, class: 'nav-link' %>
+              <%= link_to "Create Account", new_user_registration_path, class: "nav-link" %>
+            </li>
+            <li class="nav-item">
+              <%#= link_to "Log In", login_path, class: 'nav-link' %>
+              <%= link_to "Login", new_user_session_path, class: "nav-link" %>
+            </li>
+          <% end %>
+        </ul>
+        </ul>
+      </div>
+
+      <div class="order-2 order-lg-3 d-flex align-items-center">
+        
+        <!-- search -->
+        <%= form_with url: recipes_path, method: :get, local: true, data: {turbo: false}, class: "header-search-form" do |f| %>
+          <%= f.text_field :search, placeholder: "Search by Ingredients..." %>
+          <%= f.submit "Search" %>
+        <% end %>
+      </div>
+
+    </nav>
+  </div>
+</header>
+<!-- /navigation -->
+
+<!-- start of banner -->
+<div class="banner text-center">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-9 mx-auto">
+        <h1 class="mb-5">What Would You <br> Like To Cook Today?</h1>
+          <%= form_with url: recipes_advanced_search_index_path, method: :get, local: true, data: {turbo: false}, class: "advanced-search-form"  do |f| %>
+            <%= f.text_field :advanced_search, placeholder: "Search by Ingredients..." %>
+            <%= f.submit "Advanced Search" %>
+            <%= check_box_tag :breakfast %> Breakfast
+            <%= check_box_tag :main_course %> Main Course
+            <%= check_box_tag :side_dish %> Side Dish 
+            <%= check_box_tag :dessert %> Dessert
+            <%= check_box_tag :appetizer %> Appetizer
+            <%= check_box_tag :salad %> Salad
+            <%= check_box_tag :soup %> Soup 
+            <%= check_box_tag :beverage %> Beverage
+            <%= check_box_tag :sauce %> Sauce
+            <%= check_box_tag :marinade %> Marinade
+            <%= check_box_tag :snack %> Snack
+            <%= check_box_tag :ketogenic %> Ketogenic
+            <%= check_box_tag :vegetarian %> Vegetarian
+            <%= check_box_tag :vegan %> Vegan
+            <%= check_box_tag :pescetarian %> Pescetarian
+            <%= check_box_tag :paleo %> Paleo
+            <%= check_box_tag :primal %> Primal
+            <%= check_box_tag :low_fodmap %> Low FODMAP
+            <%= check_box_tag :whole30 %> Whole30
+            <%= check_box_tag :dairy %> Dairy Free
+            <%= check_box_tag :egg %> Egg Free
+            <%= check_box_tag :gluten %> Gluten Free
+            <%= check_box_tag :grain %> Grain Free
+            <%= check_box_tag :peanut %> Peanut Free
+            <%= check_box_tag :seafood %> Seafood Free
+            <%= check_box_tag :sesame %> Sesame Free
+            <%= check_box_tag :shellfish %> Shellfish Free
+            <%= check_box_tag :soy %> Soy Free
+            <%= check_box_tag :sulfite %> Sulfite Free
+            <%= check_box_tag :tree_nut %> Tree Nut Free
+            <%= check_box_tag :wheat %> Wheat Free
+          <% end %>
+          
+        <br><ul class="list-inline widget-list-inline">
+          <li class="list-inline-item"><a href="tags.html">City</a></li>
+          <li class="list-inline-item"><a href="tags.html">Color</a></li>
+          <li class="list-inline-item"><a href="tags.html">Creative</a></li>
+          <li class="list-inline-item"><a href="tags.html">Decorate</a></li>
+          <li class="list-inline-item"><a href="tags.html">Demo</a></li>
+          <li class="list-inline-item"><a href="tags.html">Elements</a></li>
+          <li class="list-inline-item"><a href="tags.html">Fish</a></li>
+          <li class="list-inline-item"><a href="tags.html">Food</a></li>
+          <li class="list-inline-item"><a href="tags.html">Nice</a></li>
+          <li class="list-inline-item"><a href="tags.html">Recipe</a></li>
+          <li class="list-inline-item"><a href="tags.html">Season</a></li>
+          <li class="list-inline-item"><a href="tags.html">Taste</a></li>
+          <li class="list-inline-item"><a href="tags.html">Tasty</a></li>
+          <li class="list-inline-item"><a href="tags.html">Vlog</a></li>
+          <li class="list-inline-item"><a href="tags.html">Wow</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  
+  <svg class="banner-shape-1" width="39" height="40" viewBox="0 0 39 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M0.965848 20.6397L0.943848 38.3906L18.6947 38.4126L18.7167 20.6617L0.965848 20.6397Z" stroke="#040306"
+      stroke-miterlimit="10" />
+    <path class="path" d="M10.4966 11.1283L10.4746 28.8792L28.2255 28.9012L28.2475 11.1503L10.4966 11.1283Z" />
+    <path d="M20.0078 1.62949L19.9858 19.3804L37.7367 19.4024L37.7587 1.65149L20.0078 1.62949Z" stroke="#040306"
+      stroke-miterlimit="10" />
+  </svg>
+  
+  <svg class="banner-shape-2" width="39" height="39" viewBox="0 0 39 39" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <g filter="url(#filter0_d)">
+      <path class="path"
+        d="M24.1587 21.5623C30.02 21.3764 34.6209 16.4742 34.435 10.6128C34.2491 4.75147 29.3468 0.1506 23.4855 0.336498C17.6241 0.522396 13.0233 5.42466 13.2092 11.286C13.3951 17.1474 18.2973 21.7482 24.1587 21.5623Z" />
+      <path
+        d="M5.64626 20.0297C11.1568 19.9267 15.7407 24.2062 16.0362 29.6855L24.631 29.4616L24.1476 10.8081L5.41797 11.296L5.64626 20.0297Z"
+        stroke="#040306" stroke-miterlimit="10" />
+    </g>
+    <defs>
+      <filter id="filter0_d" x="0.905273" y="0" width="37.8663" height="38.1979" filterUnits="userSpaceOnUse"
+        color-interpolation-filters="sRGB">
+        <feFlood flood-opacity="0" result="BackgroundImageFix" />
+        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" />
+        <feOffset dy="4" />
+        <feGaussianBlur stdDeviation="2" />
+        <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0" />
+        <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow" />
+        <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape" />
+      </filter>
+    </defs>
+  </svg>
+
+  
+  <svg class="banner-shape-3" width="39" height="40" viewBox="0 0 39 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M0.965848 20.6397L0.943848 38.3906L18.6947 38.4126L18.7167 20.6617L0.965848 20.6397Z" stroke="#040306"
+      stroke-miterlimit="10" />
+    <path class="path" d="M10.4966 11.1283L10.4746 28.8792L28.2255 28.9012L28.2475 11.1503L10.4966 11.1283Z" />
+    <path d="M20.0078 1.62949L19.9858 19.3804L37.7367 19.4024L37.7587 1.65149L20.0078 1.62949Z" stroke="#040306"
+      stroke-miterlimit="10" />
+  </svg>
+
+  
+  <svg class="banner-border" height="240" viewBox="0 0 2202 240" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path
+      d="M1 123.043C67.2858 167.865 259.022 257.325 549.762 188.784C764.181 125.427 967.75 112.601 1200.42 169.707C1347.76 205.869 1901.91 374.562 2201 1"
+      stroke-width="2" />
+  </svg>
+</div>
+<!-- end of banner -->
+
+
+
+  <!-- JS Plugins -->
+  <script src="plugins/jQuery/jquery.min.js"></script>
+
+  <script src="plugins/bootstrap/bootstrap.min.js"></script>
+
+  <script src="plugins/slick/slick.min.js"></script>
+
+  <script src="plugins/instafeed/instafeed.min.js"></script>
+
+
+  <!-- Main Script -->
+  <script src="js/script.js"></script></body>
+
+<div style="margin-top: 40px;">
+  <div class = "container">
+    <div class = "row" >
+      <% @recipe_facade.recipes.each do |recipe| %>
+        <div class ="col-lg-4 col-md-6 col-sm-12">
+          <div class = "card h-100">
+            <div class = "card recipe-card">
+              <%= link_to recipe_path(recipe.id) do %>
+                <img src="<%= recipe.img_src %>" alt="<%= recipe.name %>" class="card-img-top">
+              <% end %>
+              <div class="card-body">
+                <h5 class="card-title"><%= link_to recipe.name, recipe_path(recipe.id) %></h5>
+              </div>
+            </div>
+          </div>
+        </div>
+      <% end %>
+    </div>
+  </div>
+</div>
+
+</html>
+
+
+
+
 <%= form_with url: recipes_advanced_search_index_path, method: :get, local: true, data: {turbo: false}, class: "advanced-search-form"  do |f| %>
   <%= f.text_field :advanced_search, placeholder: "Search by Ingredients..." %>
   <%= f.submit "Advanced Search" %>
@@ -34,21 +266,3 @@
   <%= check_box_tag :wheat %> Wheat Free
 <% end %>
 
-<div class = "container">
-  <div class = "row" >
-    <% @recipe_advanced_search_facade.recipes.each do |recipe| %>
-      <div class ="col-lg-4 col-md-6 col-sm-12">
-        <div class = "card h-100">
-          <div class = "card recipe-card">
-            <%= link_to recipe_path(recipe) do %>
-              <img src="<%= recipe.img_src %>" alt="<%= recipe.name %>" class="card-img-top">
-            <% end %>
-            <div class="card-body">
-              <h5 class="card-title"><%= link_to recipe.name, recipe_path(recipe) %></h5>
-            </div>
-          </div>
-        </div>
-      </div>
-    <% end %>
-  </div>
-</div>
