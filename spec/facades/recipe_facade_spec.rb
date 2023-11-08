@@ -31,4 +31,14 @@ RSpec.describe RecipeFacade do
       expect(no_underscores).to eq("dairy soy")
     end
   end
+
+  describe "#show recipe" do
+    it "returns a hash of a particular recipe", :vcr do
+      recipe_facade = RecipeFacade.new("655235")
+
+      recipe = recipe_facade.show_recipe
+
+      expect(recipe).to be_a(Recipe)
+    end
+  end
 end

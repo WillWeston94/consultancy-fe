@@ -1,0 +1,54 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://localhost:3000/api/v1/search/655235
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.11
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - '0'
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Type:
+      - application/json; charset=utf-8
+      Vary:
+      - Origin
+      Etag:
+      - W/"22f0c5cea7fb34c8d8bb3f2c4ba76863"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 5b5b5fe3-6458-4aa7-83df-85c3e76ef414
+      X-Runtime:
+      - '0.612666'
+      Server-Timing:
+      - start_processing.action_controller;dur=0.08, process_action.action_controller;dur=606.31
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        eyJkYXRhIjp7ImlkIjoiNjU1MjM1IiwidHlwZSI6InJlY2lwZV9kZXRhaWxzIiwiYXR0cmlidXRlcyI6eyJuYW1lIjoiUGVhbnV0IEJ1dHRlciBhbmQgSmVsbHkgU21vb3RoaWUiLCJpbWdfc3JjIjoiaHR0cHM6Ly9zcG9vbmFjdWxhci5jb20vcmVjaXBlSW1hZ2VzLzY1NTIzNS01NTZ4MzcwLmpwZyIsInNlcnZpbmdzIjoyLCJyZWFkeUluTWludXRlcyI6NDUsInNlcnZpbmdTaXplX2dyYW1zIjozODYsImluc3RydWN0aW9ucyI6W3siMSI6IlBsYWNlIGluZ3JlZGllbnRzIGluIGEgaGlnaCBzcGVlZCBibGVuZGVyIGxpa2UgQmxlbmR0ZWMgZm9yIHN1cGVyIHNtb290aCB0ZXh0dXJlLCBibGVuZCBvbiBoaWdoLklmIHVzaW5nIGEgcmVndWxhciBibGVuZGVyIHB1dCBtaWxrIGFuZCBzdHJhd2JlcnJpZXMgaW4gdGhlbiBibGVuZC5OZXh0LCBhZGQgYmFuYW5hIHBpZWNlcyBhbmQgcGVhbnV0IGJ1dHRlciwgcHJvY2VzcyB1bnRpbCBzbW9vdGguIn0seyIyIjoiR2FybmlzaCB3aXRoIGNydXNoZWQgcGVhbnV0cyBhbmQgc2VydmUuIn1dLCJpbmdyZWRpZW50cyI6WyIxIGN1cCBhbG1vbmQgbWlsayBvciBvdGhlciBub24tZGFpcnkgbWlsayAoc2VlIG15IGFsbW9uZCBtaWxrIHJlY2lwZSkiLCIyIGJhbmFuYXMsIHNtYXNoZWQgKEkgdXNlZCBmcm96ZW4pIiwiMS8yIGN1cCBwZWFudXQgYnV0dGVyIiwiwr0gY3VwIHN0cmF3YmVycmllcyAoYWJvdXQgMyBzdHJhd2JlcnJpZXMpIG9yIDEgVGJzcCBzdHJhd2JlcnJ5IGphbSJdfX19
+  recorded_at: Wed, 08 Nov 2023 03:39:21 GMT
+recorded_with: VCR 6.2.0

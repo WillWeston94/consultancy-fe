@@ -1,0 +1,479 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://localhost:3000/api/v1/search/716381
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.11
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - '0'
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Type:
+      - application/json; charset=utf-8
+      Vary:
+      - Origin
+      Etag:
+      - W/"7e18098266bf5106b2753f7da1cf208b"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 29c68286-2140-4685-9693-330f21810a6c
+      X-Runtime:
+      - '0.618660'
+      Server-Timing:
+      - start_processing.action_controller;dur=0.08, process_action.action_controller;dur=611.59
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"716381","type":"recipe_details","attributes":{"name":"Nigerian
+        Snail Stew","img_src":"https://spoonacular.com/recipeImages/716381-556x370.jpg","servings":1,"readyInMinutes":45,"servingSize_grams":1251,"instructions":[{"1":"In
+        a bowl, wash the snails with lime and salt till all the slime is gone."},{"2":"Place
+        the snail in a pot with the chili powder, seasoning cubes, chopped garlic,
+        1/2 of the onion(chopped) and a pinch of salt and bring to boil for about
+        15-18 minutes.In a separate pot, place the tomatoes, bell pepper, scotch bonnet
+        peppers, crush with a wooden spoon till some of the juices come out and bring
+        to boil till they are all soft on low heat. (This helps to dry up some of
+        the extra water from the tomatoes)In a pot, pour in your oil, cut your onions
+        in rings and fry in the hot oil on medium heat."},{"3":"Pour in your tomato-pepper
+        mix and allow to fry for about 8-10 minutes on low heat."},{"4":"Pour in the
+        left-over stock from the snail and allow to cook for 5 more minutes on medium
+        heat."},{"5":"Add your seasoning cubes and taste for salt."},{"6":"Add your
+        snails and stir in and allow to stew for 2-4 minutes more on medium heat."},{"7":"Serve
+        with Rice, Pasta, Plantain, Yams or Potatoes."}],"ingredients":["1 teaspoon
+        of chili powder","2 cloves of garlic","Seasoning Cubes","3 Limes","1 Red bell
+        pepper","1 large Red onion","2 tablespoons of Salt","4 scotch bonnet peppers","4
+        scotch bonnet peppers","8 snails","5 Large tomatoes","1 cooking spoon of Vegetable
+        Oil"]}}}'
+  recorded_at: Wed, 08 Nov 2023 03:18:49 GMT
+- request:
+    method: get
+    uri: http://localhost:3000/api/v1/search/716381
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.11
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - '0'
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Type:
+      - application/json; charset=utf-8
+      Vary:
+      - Origin
+      Etag:
+      - W/"7e18098266bf5106b2753f7da1cf208b"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - fdd1ee65-d2c0-42f8-a8f0-50e9a420f8d0
+      X-Runtime:
+      - '0.529500'
+      Server-Timing:
+      - start_processing.action_controller;dur=0.06, process_action.action_controller;dur=526.57
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"716381","type":"recipe_details","attributes":{"name":"Nigerian
+        Snail Stew","img_src":"https://spoonacular.com/recipeImages/716381-556x370.jpg","servings":1,"readyInMinutes":45,"servingSize_grams":1251,"instructions":[{"1":"In
+        a bowl, wash the snails with lime and salt till all the slime is gone."},{"2":"Place
+        the snail in a pot with the chili powder, seasoning cubes, chopped garlic,
+        1/2 of the onion(chopped) and a pinch of salt and bring to boil for about
+        15-18 minutes.In a separate pot, place the tomatoes, bell pepper, scotch bonnet
+        peppers, crush with a wooden spoon till some of the juices come out and bring
+        to boil till they are all soft on low heat. (This helps to dry up some of
+        the extra water from the tomatoes)In a pot, pour in your oil, cut your onions
+        in rings and fry in the hot oil on medium heat."},{"3":"Pour in your tomato-pepper
+        mix and allow to fry for about 8-10 minutes on low heat."},{"4":"Pour in the
+        left-over stock from the snail and allow to cook for 5 more minutes on medium
+        heat."},{"5":"Add your seasoning cubes and taste for salt."},{"6":"Add your
+        snails and stir in and allow to stew for 2-4 minutes more on medium heat."},{"7":"Serve
+        with Rice, Pasta, Plantain, Yams or Potatoes."}],"ingredients":["1 teaspoon
+        of chili powder","2 cloves of garlic","Seasoning Cubes","3 Limes","1 Red bell
+        pepper","1 large Red onion","2 tablespoons of Salt","4 scotch bonnet peppers","4
+        scotch bonnet peppers","8 snails","5 Large tomatoes","1 cooking spoon of Vegetable
+        Oil"]}}}'
+  recorded_at: Wed, 08 Nov 2023 03:18:50 GMT
+- request:
+    method: get
+    uri: http://localhost:3000/api/v1/search/716381
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.11
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - '0'
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Type:
+      - application/json; charset=utf-8
+      Vary:
+      - Origin
+      Etag:
+      - W/"7e18098266bf5106b2753f7da1cf208b"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 7962a7d4-8537-457e-a7db-a5a765c4308b
+      X-Runtime:
+      - '0.652812'
+      Server-Timing:
+      - start_processing.action_controller;dur=0.06, process_action.action_controller;dur=649.86
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"716381","type":"recipe_details","attributes":{"name":"Nigerian
+        Snail Stew","img_src":"https://spoonacular.com/recipeImages/716381-556x370.jpg","servings":1,"readyInMinutes":45,"servingSize_grams":1251,"instructions":[{"1":"In
+        a bowl, wash the snails with lime and salt till all the slime is gone."},{"2":"Place
+        the snail in a pot with the chili powder, seasoning cubes, chopped garlic,
+        1/2 of the onion(chopped) and a pinch of salt and bring to boil for about
+        15-18 minutes.In a separate pot, place the tomatoes, bell pepper, scotch bonnet
+        peppers, crush with a wooden spoon till some of the juices come out and bring
+        to boil till they are all soft on low heat. (This helps to dry up some of
+        the extra water from the tomatoes)In a pot, pour in your oil, cut your onions
+        in rings and fry in the hot oil on medium heat."},{"3":"Pour in your tomato-pepper
+        mix and allow to fry for about 8-10 minutes on low heat."},{"4":"Pour in the
+        left-over stock from the snail and allow to cook for 5 more minutes on medium
+        heat."},{"5":"Add your seasoning cubes and taste for salt."},{"6":"Add your
+        snails and stir in and allow to stew for 2-4 minutes more on medium heat."},{"7":"Serve
+        with Rice, Pasta, Plantain, Yams or Potatoes."}],"ingredients":["1 teaspoon
+        of chili powder","2 cloves of garlic","Seasoning Cubes","3 Limes","1 Red bell
+        pepper","1 large Red onion","2 tablespoons of Salt","4 scotch bonnet peppers","4
+        scotch bonnet peppers","8 snails","5 Large tomatoes","1 cooking spoon of Vegetable
+        Oil"]}}}'
+  recorded_at: Wed, 08 Nov 2023 03:18:51 GMT
+- request:
+    method: get
+    uri: http://localhost:3000/api/v1/search/716381
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.11
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - '0'
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Type:
+      - application/json; charset=utf-8
+      Vary:
+      - Origin
+      Etag:
+      - W/"7e18098266bf5106b2753f7da1cf208b"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 59a00d25-c3b2-4823-b502-de3c07513ff7
+      X-Runtime:
+      - '0.583565'
+      Server-Timing:
+      - start_processing.action_controller;dur=0.09, process_action.action_controller;dur=579.42
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"716381","type":"recipe_details","attributes":{"name":"Nigerian
+        Snail Stew","img_src":"https://spoonacular.com/recipeImages/716381-556x370.jpg","servings":1,"readyInMinutes":45,"servingSize_grams":1251,"instructions":[{"1":"In
+        a bowl, wash the snails with lime and salt till all the slime is gone."},{"2":"Place
+        the snail in a pot with the chili powder, seasoning cubes, chopped garlic,
+        1/2 of the onion(chopped) and a pinch of salt and bring to boil for about
+        15-18 minutes.In a separate pot, place the tomatoes, bell pepper, scotch bonnet
+        peppers, crush with a wooden spoon till some of the juices come out and bring
+        to boil till they are all soft on low heat. (This helps to dry up some of
+        the extra water from the tomatoes)In a pot, pour in your oil, cut your onions
+        in rings and fry in the hot oil on medium heat."},{"3":"Pour in your tomato-pepper
+        mix and allow to fry for about 8-10 minutes on low heat."},{"4":"Pour in the
+        left-over stock from the snail and allow to cook for 5 more minutes on medium
+        heat."},{"5":"Add your seasoning cubes and taste for salt."},{"6":"Add your
+        snails and stir in and allow to stew for 2-4 minutes more on medium heat."},{"7":"Serve
+        with Rice, Pasta, Plantain, Yams or Potatoes."}],"ingredients":["1 teaspoon
+        of chili powder","2 cloves of garlic","Seasoning Cubes","3 Limes","1 Red bell
+        pepper","1 large Red onion","2 tablespoons of Salt","4 scotch bonnet peppers","4
+        scotch bonnet peppers","8 snails","5 Large tomatoes","1 cooking spoon of Vegetable
+        Oil"]}}}'
+  recorded_at: Wed, 08 Nov 2023 03:18:51 GMT
+- request:
+    method: get
+    uri: http://localhost:3000/api/v1/search/716381
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.11
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - '0'
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Type:
+      - application/json; charset=utf-8
+      Vary:
+      - Origin
+      Etag:
+      - W/"7e18098266bf5106b2753f7da1cf208b"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 638598f5-fc78-4ea3-b915-59ed45dbaaa7
+      X-Runtime:
+      - '0.602557'
+      Server-Timing:
+      - start_processing.action_controller;dur=0.07, process_action.action_controller;dur=599.56
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"716381","type":"recipe_details","attributes":{"name":"Nigerian
+        Snail Stew","img_src":"https://spoonacular.com/recipeImages/716381-556x370.jpg","servings":1,"readyInMinutes":45,"servingSize_grams":1251,"instructions":[{"1":"In
+        a bowl, wash the snails with lime and salt till all the slime is gone."},{"2":"Place
+        the snail in a pot with the chili powder, seasoning cubes, chopped garlic,
+        1/2 of the onion(chopped) and a pinch of salt and bring to boil for about
+        15-18 minutes.In a separate pot, place the tomatoes, bell pepper, scotch bonnet
+        peppers, crush with a wooden spoon till some of the juices come out and bring
+        to boil till they are all soft on low heat. (This helps to dry up some of
+        the extra water from the tomatoes)In a pot, pour in your oil, cut your onions
+        in rings and fry in the hot oil on medium heat."},{"3":"Pour in your tomato-pepper
+        mix and allow to fry for about 8-10 minutes on low heat."},{"4":"Pour in the
+        left-over stock from the snail and allow to cook for 5 more minutes on medium
+        heat."},{"5":"Add your seasoning cubes and taste for salt."},{"6":"Add your
+        snails and stir in and allow to stew for 2-4 minutes more on medium heat."},{"7":"Serve
+        with Rice, Pasta, Plantain, Yams or Potatoes."}],"ingredients":["1 teaspoon
+        of chili powder","2 cloves of garlic","Seasoning Cubes","3 Limes","1 Red bell
+        pepper","1 large Red onion","2 tablespoons of Salt","4 scotch bonnet peppers","4
+        scotch bonnet peppers","8 snails","5 Large tomatoes","1 cooking spoon of Vegetable
+        Oil"]}}}'
+  recorded_at: Wed, 08 Nov 2023 03:18:52 GMT
+- request:
+    method: get
+    uri: http://localhost:3000/api/v1/search/716381
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.11
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - '0'
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Type:
+      - application/json; charset=utf-8
+      Vary:
+      - Origin
+      Etag:
+      - W/"7e18098266bf5106b2753f7da1cf208b"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 59cb99cc-831c-447a-97de-0f022e833dca
+      X-Runtime:
+      - '0.546172'
+      Server-Timing:
+      - start_processing.action_controller;dur=0.06, process_action.action_controller;dur=543.32
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"716381","type":"recipe_details","attributes":{"name":"Nigerian
+        Snail Stew","img_src":"https://spoonacular.com/recipeImages/716381-556x370.jpg","servings":1,"readyInMinutes":45,"servingSize_grams":1251,"instructions":[{"1":"In
+        a bowl, wash the snails with lime and salt till all the slime is gone."},{"2":"Place
+        the snail in a pot with the chili powder, seasoning cubes, chopped garlic,
+        1/2 of the onion(chopped) and a pinch of salt and bring to boil for about
+        15-18 minutes.In a separate pot, place the tomatoes, bell pepper, scotch bonnet
+        peppers, crush with a wooden spoon till some of the juices come out and bring
+        to boil till they are all soft on low heat. (This helps to dry up some of
+        the extra water from the tomatoes)In a pot, pour in your oil, cut your onions
+        in rings and fry in the hot oil on medium heat."},{"3":"Pour in your tomato-pepper
+        mix and allow to fry for about 8-10 minutes on low heat."},{"4":"Pour in the
+        left-over stock from the snail and allow to cook for 5 more minutes on medium
+        heat."},{"5":"Add your seasoning cubes and taste for salt."},{"6":"Add your
+        snails and stir in and allow to stew for 2-4 minutes more on medium heat."},{"7":"Serve
+        with Rice, Pasta, Plantain, Yams or Potatoes."}],"ingredients":["1 teaspoon
+        of chili powder","2 cloves of garlic","Seasoning Cubes","3 Limes","1 Red bell
+        pepper","1 large Red onion","2 tablespoons of Salt","4 scotch bonnet peppers","4
+        scotch bonnet peppers","8 snails","5 Large tomatoes","1 cooking spoon of Vegetable
+        Oil"]}}}'
+  recorded_at: Wed, 08 Nov 2023 03:18:52 GMT
+- request:
+    method: get
+    uri: http://localhost:3000/api/v1/search/716381
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.11
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - '0'
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Type:
+      - application/json; charset=utf-8
+      Vary:
+      - Origin
+      Etag:
+      - W/"7e18098266bf5106b2753f7da1cf208b"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 24a5f3af-aec0-475e-bf7d-8d4dd5b14682
+      X-Runtime:
+      - '0.246005'
+      Server-Timing:
+      - start_processing.action_controller;dur=0.06, process_action.action_controller;dur=243.20
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"716381","type":"recipe_details","attributes":{"name":"Nigerian
+        Snail Stew","img_src":"https://spoonacular.com/recipeImages/716381-556x370.jpg","servings":1,"readyInMinutes":45,"servingSize_grams":1251,"instructions":[{"1":"In
+        a bowl, wash the snails with lime and salt till all the slime is gone."},{"2":"Place
+        the snail in a pot with the chili powder, seasoning cubes, chopped garlic,
+        1/2 of the onion(chopped) and a pinch of salt and bring to boil for about
+        15-18 minutes.In a separate pot, place the tomatoes, bell pepper, scotch bonnet
+        peppers, crush with a wooden spoon till some of the juices come out and bring
+        to boil till they are all soft on low heat. (This helps to dry up some of
+        the extra water from the tomatoes)In a pot, pour in your oil, cut your onions
+        in rings and fry in the hot oil on medium heat."},{"3":"Pour in your tomato-pepper
+        mix and allow to fry for about 8-10 minutes on low heat."},{"4":"Pour in the
+        left-over stock from the snail and allow to cook for 5 more minutes on medium
+        heat."},{"5":"Add your seasoning cubes and taste for salt."},{"6":"Add your
+        snails and stir in and allow to stew for 2-4 minutes more on medium heat."},{"7":"Serve
+        with Rice, Pasta, Plantain, Yams or Potatoes."}],"ingredients":["1 teaspoon
+        of chili powder","2 cloves of garlic","Seasoning Cubes","3 Limes","1 Red bell
+        pepper","1 large Red onion","2 tablespoons of Salt","4 scotch bonnet peppers","4
+        scotch bonnet peppers","8 snails","5 Large tomatoes","1 cooking spoon of Vegetable
+        Oil"]}}}'
+  recorded_at: Wed, 08 Nov 2023 03:18:53 GMT
+recorded_with: VCR 6.2.0
