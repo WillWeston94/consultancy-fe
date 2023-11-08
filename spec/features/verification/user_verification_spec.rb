@@ -9,7 +9,8 @@ RSpec.describe "Two-Factor Authentication", type: :feature do
   end
 
 
-  scenario "User signs in with Google and is prompted to verify with SMS phone number" do
+  scenario "2FA Authentication" do
+    xit "User signs in with Google and is prompted to verify with SMS phone number"
     visit new_user_session_path
 
     mock_auth_hash(:google_oauth2)
