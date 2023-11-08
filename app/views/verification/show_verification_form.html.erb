@@ -1,0 +1,7 @@
+<%= form_with url: send_code_path, method: :post, local: true do |f| %>
+  <div class="send_code">
+    <%= label_tag :phone_number, "Enter your phone number with country code" %>
+    <%= text_field_tag :phone_number %>
+    <%= f.submit "Send Verification Code" %>
+  </div>
+<% end %>

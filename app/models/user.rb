@@ -14,4 +14,8 @@ class User < ApplicationRecord
       # user.skip_confirmation! uncomment this if we trust google's verification, 2fa??
     end
   end
+
+  def verify_two_factor_auth
+    update(two_factor_verified: true)
+  end
 end

@@ -1,0 +1,54 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://localhost:3000/api/v1/search/1096178
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.11
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - '0'
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Type:
+      - application/json; charset=utf-8
+      Vary:
+      - Origin
+      Etag:
+      - W/"3103c04c7e4c355331c4056753c32756"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - e115209a-d4ff-48de-bf7c-44c490ed04f9
+      X-Runtime:
+      - '0.623752'
+      Server-Timing:
+      - start_processing.action_controller;dur=0.08, process_action.action_controller;dur=608.96
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        eyJkYXRhIjp7ImlkIjoiMTA5NjE3OCIsInR5cGUiOiJyZWNpcGVfZGV0YWlscyIsImF0dHJpYnV0ZXMiOnsibmFtZSI6IkJsdWViZXJyeSwgUGVyc2ltbW9uIFNtb290aGllIHdpdGggQmFuYW5hIGFuZCBQZWFudXQgQnV0dGVyIiwiaW1nX3NyYyI6Imh0dHBzOi8vc3Bvb25hY3VsYXIuY29tL3JlY2lwZUltYWdlcy8xMDk2MTc4LTU1NngzNzAuanBnIiwic2VydmluZ3MiOjIsInJlYWR5SW5NaW51dGVzIjo1LCJzZXJ2aW5nU2l6ZV9ncmFtcyI6MzIyLCJpbnN0cnVjdGlvbnMiOlt7IjEiOiJCbGVuZCBhbGwgdGhlIGluZ3JlZGllbnRzIHRvZ2V0aGVyIHdpdGggYXMgbXVjaCB3YXRlciBhbmQgaWNlIGFzIHlvdSBsaWtlLiJ9XSwiaW5ncmVkaWVudHMiOlsiMiBzbWFsbCBiYW5hbmFzIiwiMiB0YnNwIGNyZWFteSBwZWFudXQgYnV0dGVyIiwiMeKBhDIgY3VwIGZyb3plbiBibHVlYmVycmllcyIsIjIgcGVyc2ltbW9uIl19fX0=
+  recorded_at: Wed, 08 Nov 2023 03:24:45 GMT
+recorded_with: VCR 6.2.0
