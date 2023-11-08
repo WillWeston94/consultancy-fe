@@ -2,7 +2,6 @@ class VerificationController < ApplicationController
   before_action :authenticate_user!
 
   def show_verification_form
-    # Your code for showing the verification form
   end
 
   def send_code
@@ -17,7 +16,7 @@ class VerificationController < ApplicationController
         redirect_to show_verification_form_path, notice: "Unable to send verification code. Please Try Again"
       end
     else
-      # Handle invalid HTTP method (e.g., GET)
+      # Handles invalid GET method
       render plain: "Method Not Allowed", status: :method_not_allowed
     end
   end
@@ -39,7 +38,7 @@ class VerificationController < ApplicationController
         render :show_confirmation_code, notice: "Unable to verify code. Please Try Again"
       end
     else
-      # Handle invalid HTTP method (e.g., GET)
+      # Handles invalid GET method
       render plain: "Method Not Allowed", status: :method_not_allowed
     end
   end
