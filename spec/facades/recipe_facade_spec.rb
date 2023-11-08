@@ -32,11 +32,11 @@ RSpec.describe RecipeFacade do
     end
   end
 
-  describe "#show recipe" do
+  describe "#get recipe" do
     it "returns a hash of a particular recipe", :vcr do
-      recipe_facade = RecipeFacade.new("655235")
+      recipe_facade = RecipeShowFacade.new("655235")
 
-      recipe = recipe_facade.show_recipe
+      recipe = recipe_facade.get_recipe
 
       expect(recipe).to be_a(Recipe)
     end
