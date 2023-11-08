@@ -1,0 +1,27 @@
+<%= form_with model: RecipeModel.new, url: '/api/v1/recipe_models', method: :post, local: true, multipart: true do |form| %>
+  <div>
+    <%= form.label :title, 'Title:' %>
+    <%= form.text_field :title, required: true %>
+  </div>
+  <div>
+    <%= form.label :servings, 'Servings:' %>
+    <%= form.number_field :servings, required: true %>
+  </div>
+  <div>
+    <%= form.label :prep_time, 'Prep Time:' %>
+    <%= form.text_field :prep_time, required: true %>
+  </div>
+  <div>
+    <%= form.label :ingredients, 'Ingredients:' %>
+    <%= form.text_area :ingredients, rows: 4, required: true %>
+  </div>
+  <div>
+    <%= form.label :instructions, 'Instructions:' %>
+    <%= form.text_area :instructions, rows: 4, required: true %>
+  </div>
+  <div>
+    <%= form.label :image, 'Image:' %>
+    <%= form.file_field :image, direct_upload: true, required: true, accept: 'image/*' %>
+  </div>
+  <%= form.submit 'Create Recipe' %>
+<% end %>

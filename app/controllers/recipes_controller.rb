@@ -7,4 +7,7 @@ class RecipesController < ApplicationController
     recipe_id = params[:id]
     @recipe_facade = RecipeShowFacade.new(recipe_id)
   end
+
+  def new
+  end
 end

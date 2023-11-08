@@ -11,7 +11,7 @@ Rails.application.routes.draw do
     sessions: "users/sessions",
     omniauth_callbacks: "users/omniauth_callbacks"
   }
-  resources :recipes, only: [:index, :show]
+  resources :recipes, only: [:index, :show, :new, :create]
   resources :recipes_advanced_search, only: [:index]
 
 
