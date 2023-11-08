@@ -12,6 +12,14 @@ class RecipeDatabaseService
     get_url("/api/v1/search?q=#{search}")
   end
 
+  def recipes_by_keyword_with_intolerances(search, intolerances)
+    get_url("/api/v1/search?q=#{search}&intolerances=#{intolerances}")
+  end
+
+  def find_recipe(id)
+    get_url("/api/v1/search/#{id}")
+  end
+
   def user_recipes(id)
     get_url("/api/v1/user_recipes?user_id=#{id}")
   end
