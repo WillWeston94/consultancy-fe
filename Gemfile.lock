@@ -107,6 +107,13 @@ GEM
     docile (1.4.0)
     erubi (1.12.0)
     execjs (2.9.1)
+    factory_bot (6.2.1)
+      activesupport (>= 5.0.0)
+    factory_bot_rails (6.2.0)
+      factory_bot (~> 6.2.0)
+      railties (>= 5.0.0)
+    faker (3.2.2)
+      i18n (>= 1.8.11, < 2)
     faraday (2.7.11)
       base64
       faraday-net_http (>= 2.0, < 3.1)
@@ -184,6 +191,10 @@ GEM
       omniauth (~> 2.0)
     orm_adapter (0.5.0)
     pg (1.5.4)
+    phony (2.20.10)
+    phony_rails (0.15.0)
+      activesupport (>= 3.0)
+      phony (>= 2.18.12)
     popper_js (2.11.8)
     pry (0.14.2)
       coderay (~> 1.1)
@@ -293,6 +304,10 @@ GEM
       actionpack (>= 6.0.0)
       activejob (>= 6.0.0)
       railties (>= 6.0.0)
+    twilio-ruby (6.8.1)
+      faraday (>= 0.9, < 3.0)
+      jwt (>= 1.5, < 3.0)
+      nokogiri (>= 1.6, < 2.0)
     tzinfo (2.0.6)
       concurrent-ruby (~> 1.0)
     vcr (6.2.0)
@@ -327,6 +342,8 @@ DEPENDENCIES
   capybara
   debug
   devise
+  factory_bot_rails
+  faker
   faraday
   importmap-rails
   jbuilder
@@ -334,6 +351,7 @@ DEPENDENCIES
   omniauth-google-oauth2
   omniauth-rails_csrf_protection (~> 1.0)
   pg (~> 1.1)
+  phony_rails
   pry
   puma (~> 5.0)
   rack-cors
@@ -345,6 +363,7 @@ DEPENDENCIES
   sprockets-rails
   stimulus-rails
   turbo-rails
+  twilio-ruby
   tzinfo-data
   vcr
   web-console
