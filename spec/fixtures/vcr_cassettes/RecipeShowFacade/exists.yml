@@ -1,0 +1,71 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://localhost:3000/api/v1/search/663931
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.11
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - '0'
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Type:
+      - application/json; charset=utf-8
+      Vary:
+      - Origin
+      Etag:
+      - W/"e02f903dc5fae5de8899f11a9a8b67d2"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 59b3b15f-71b4-4bea-a3a5-4cb23f2fae13
+      X-Runtime:
+      - '0.703281'
+      Server-Timing:
+      - start_processing.action_controller;dur=0.10, process_action.action_controller;dur=697.57
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"663931","type":"recipe_details","attributes":{"name":"Tuna
+        Mexi Melts","img_src":"https://spoonacular.com/recipeImages/663931-556x370.jpg","servings":6,"readyInMinutes":45,"servingSize_grams":329,"instructions":[{"1":"Well
+        whip up the picante first. To do this, go ahead and add all the ingredients
+        into your food processor. Zip it up good and then add in some salt to taste.Next
+        up, grab your french loaf and slice it into 1 slices."},{"2":"Brush the melted
+        butter over your slices of bread and then sprinkle on some cumin, chile powder,
+        and garlic powder."},{"3":"Add all the melt ingredients with the exception
+        of the pepper jack cheese to a bowl and mix it up good. Now grab your bread
+        and lop a large spoonful of the tuna mixture on each piece. Top them all off
+        with a slice of pepper jack cheese. Throw your sandwiches into an oven heated
+        to 350 degrees and let them heat up for about 10 to 15 minutes or until your
+        cheese is melted and bubbling."}],"ingredients":["5 tablespoons of Butter,
+        Melted","1/4 teaspoon of Chile Powder","1 bunch Small of Cilantro","1/4 teaspoon
+        of Cumin","1 loaf of French Bread","Garlic Powder for Sprinkling","2 Green
+        Onions, Chopped","1/2 Jalapeno; Seeded, Cored and Chopped","1 clove of Garlic
+        1 Lime, Juiced","1/4 teaspoon of Paprika","8 ounces of Pepper Jack Cheese,
+        Sliced","3/4 cup of your Picante","5 Roma Tomatoes, Roughly Chopped","1 teaspoon
+        Salt","3/4 cup of Shredded Cheddar Cheese","1 cup Sour cream or yogurt","360
+        grams Tuna"]}}}'
+  recorded_at: Wed, 08 Nov 2023 02:16:17 GMT
+recorded_with: VCR 6.2.0
