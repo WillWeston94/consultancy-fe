@@ -2,7 +2,7 @@ class UserRecipesController < ApplicationController
   def create
     RecipeDatabaseService.new.save_user_recipe(params[:user_id], params[:recipe_id])
     flash[:success] = "Recipe was saved and can be viewed at any time from your dashboard!"
-    # render current view
+    redirect_to recipe_path(params[:recipe_id])
   end
 
   def destroy
