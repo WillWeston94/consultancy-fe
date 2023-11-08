@@ -10,4 +10,15 @@ class RecipesController < ApplicationController
 
   def new
   end
+
+  def create
+    params_hash = {
+      "title" => params[:title],
+      "servings" => params[:servings],
+      "prep_time" => params[:prep_time],
+      "ingredients" => params[:ingredients],
+      "instructions" => params[:instructions]
+    }
+    RecipeDatabaseService.new.create_recipe(params_hash)
+  end
 end

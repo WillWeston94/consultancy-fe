@@ -31,4 +31,8 @@ class RecipeDatabaseService
   def destroy_user_recipe(user_id, recipe_id)
     conn.delete("/api/v1/user_recipes?user_id=#{user_id}&recipe_id=#{recipe_id}")
   end
+
+  def create_recipe(params)
+    conn.post("/api/v1/recipes", params.to_json)
+  end
 end
