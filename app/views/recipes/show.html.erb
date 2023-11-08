@@ -1,5 +1,7 @@
 <br><%= @recipe_facade.recipe.name %>
-<br><%= button_to "Save Recipe", user_recipes_path, method: :post, data: {turbo: false}, params: {user_id: current_user.id, recipe_id: @recipe_facade.search} %>
+<% if current_user %>
+  <br><%= button_to "Save Recipe", user_recipes_path, method: :post, data: {turbo: false}, params: {user_id: current_user.id, recipe_id: @recipe_facade.search} %>
+<% end %>
 <br><img src="<%= @recipe_facade.recipe.img_src %>" alt="<%= @recipe_facade.recipe.name %>">
 <br>Servings: <%= @recipe_facade.recipe.servings %>
 <br>Prep Time: <%= @recipe_facade.recipe.cooking_time %> Minutes

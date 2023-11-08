@@ -594,18 +594,38 @@
           null
         ]
       },
+      "/Users/tylerblackmon/turing_work/3mod/projects/consultancy_fe/app/controllers/recipes_controller.rb": {
+        "lines": [
+          1,
+          1,
+          0,
+          null,
+          null,
+          1,
+          2,
+          2,
+          null,
+          null
+        ]
+      },
+      "/Users/tylerblackmon/turing_work/3mod/projects/consultancy_fe/app/controllers/application_controller.rb": {
+        "lines": [
+          1,
+          null
+        ]
+      },
       "/Users/tylerblackmon/turing_work/3mod/projects/consultancy_fe/app/facades/recipe_show_facade.rb": {
         "lines": [
           1,
           1,
           1,
-          1,
-          1,
+          2,
+          2,
           null,
           null,
           1,
-          1,
-          1,
+          2,
+          2,
           null,
           null
         ]
@@ -614,24 +634,12 @@
         "lines": [
           1,
           1,
-          1,
+          8,
           null,
           null,
           1,
-          1,
-          1,
-          null,
-          null,
-          1,
-          0,
-          null,
-          null,
-          1,
-          0,
-          null,
-          null,
-          1,
-          1,
+          5,
+          5,
           null,
           null,
           1,
@@ -643,7 +651,19 @@
           null,
           null,
           1,
-          0,
+          2,
+          null,
+          null,
+          1,
+          3,
+          null,
+          null,
+          1,
+          2,
+          null,
+          null,
+          1,
+          1,
           null,
           null
         ]
@@ -653,9 +673,26 @@
           1,
           1,
           1,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          null,
+          null
+        ]
+      },
+      "/Users/tylerblackmon/turing_work/3mod/projects/consultancy_fe/app/controllers/user_recipes_controller.rb": {
+        "lines": [
           1,
           1,
-          1,
+          2,
+          2,
+          null,
+          null,
+          null,
           1,
           1,
           1,
@@ -663,8 +700,33 @@
           null,
           null
         ]
+      },
+      "/Users/tylerblackmon/turing_work/3mod/projects/consultancy_fe/app/controllers/dashboard_controller.rb": {
+        "lines": [
+          1,
+          1,
+          3,
+          null,
+          null
+        ]
+      },
+      "/Users/tylerblackmon/turing_work/3mod/projects/consultancy_fe/app/facades/dashboard_facade.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          3,
+          null,
+          null,
+          1,
+          3,
+          null,
+          5,
+          null,
+          null
+        ]
       }
     },
-    "timestamp": 1699409834
+    "timestamp": 1699412260
   }
 }
