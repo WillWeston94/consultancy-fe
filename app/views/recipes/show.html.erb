@@ -1,4 +1,5 @@
 <br><%= @recipe.show_recipe.name %>
+<br><%= button_to "Save Recipe", user_recipes_path, method: :post, data: {turbo: false}, params: {user_id: current_user.id, recipe_id: @recipe.search} %>
 <br><img src="<%= @recipe.show_recipe.img_src %>" alt="<%= @recipe.show_recipe.name %>">
 <br>Servings: <%= @recipe.show_recipe.servings %>
 <br>Prep Time: <%= @recipe.show_recipe.cooking_time %> Minutes
