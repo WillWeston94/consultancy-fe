@@ -1,9 +1,0 @@
-<%= form_with model: @user, data: {turbo: false} do |form| %>
-  <%= form.label :email, "Email:" %>
-  <%= form.text_field :email %><br>
-  <%= form.label :password, "Password:" %>
-  <%= form.password_field :password %><br>
-  <%= form.label :password_confirmation, "Confirm Password:" %>
-  <%= form.password_field :password_confirmation %><br>
-  <%= form.submit "Create Account" %>
-<% end %>
