@@ -6,6 +6,7 @@
 
 # Ignore simplecov files
 /coverage
+/coverage/*
 
 # Ignore bundler config.
 /.bundle
