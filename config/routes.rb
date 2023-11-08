@@ -13,4 +13,5 @@ Rails.application.routes.draw do
   }
   resources :recipes, only: [:index, :show]
   resources :recipes_advanced_search, only: [:index]
+  resources :dashboard, only: [:index]
 end

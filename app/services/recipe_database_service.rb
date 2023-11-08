@@ -11,4 +11,8 @@ class RecipeDatabaseService
   def recipes_by_keyword(search)
     get_url("/api/v1/search?q=#{search}")
   end
+
+  def user_recipes(id)
+    get_url("/api/v1/user_recipes?user_id=#{id}")
+  end
 end
