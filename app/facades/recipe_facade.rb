@@ -11,9 +11,4 @@ class RecipeFacade
       Recipe.new(recipe_data)
     end
   end
-
-  def show_recipe
-    data = RecipeDatabaseService.new.find_recipe(@search)
-    Recipe.new(data[:data])
-  end
 end

@@ -1,12 +1,12 @@
-<br><%= @recipe.show_recipe.name %>
-<br><%= button_to "Save Recipe", user_recipes_path, method: :post, data: {turbo: false}, params: {user_id: current_user.id, recipe_id: @recipe.search} %>
-<br><img src="<%= @recipe.show_recipe.img_src %>" alt="<%= @recipe.show_recipe.name %>">
-<br>Servings: <%= @recipe.show_recipe.servings %>
-<br>Prep Time: <%= @recipe.show_recipe.cooking_time %> Minutes
-<br>Ingredients: <% @recipe.show_recipe.ingredients.each do |ingredient| %>
+<br><%= @recipe_facade.recipe.name %>
+<br><%= button_to "Save Recipe", user_recipes_path, method: :post, data: {turbo: false}, params: {user_id: current_user.id, recipe_id: @recipe_facade.search} %>
+<br><img src="<%= @recipe_facade.recipe.img_src %>" alt="<%= @recipe_facade.recipe.name %>">
+<br>Servings: <%= @recipe_facade.recipe.servings %>
+<br>Prep Time: <%= @recipe_facade.recipe.cooking_time %> Minutes
+<br>Ingredients: <% @recipe_facade.recipe.ingredients.each do |ingredient| %>
                     <li><%= ingredient %></li>
                     <% end %>
-<br>Instructions: <% @recipe.show_recipe.instructions.each do |instruction| %>
+<br>Instructions: <% @recipe_facade.recipe.instructions.each do |instruction| %>
                     <% instruction.each do |number, step| %>
                       <br><%= number %>. <%= step %>
                     <% end %>

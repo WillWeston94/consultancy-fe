@@ -5,6 +5,6 @@ class RecipesController < ApplicationController
 
   def show
     recipe_id = params[:id]
-    @recipe = RecipeFacade.new(recipe_id)
+    @recipe_facade = RecipeShowFacade.new(recipe_id)
   end
 end
