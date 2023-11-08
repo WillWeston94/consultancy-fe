@@ -15,10 +15,16 @@ Rails.application.routes.draw do
   resources :recipes_advanced_search, only: [:index]
 
 
+
   get '/verify/phone', to: 'verification#show_verification_form', as: 'show_verification_form'
   post 'verify/send_code', to: 'verification#send_code', as: "send_code"
 
   post "verify/verify_code", to: "verification#verify_code", as: "verify_code"
   get "verify/show_confirmation_form", to: "verification#show_confirmation_form", as: "show_confirmation_form"
   
+
+  resources :dashboard, only: [:index]
+  resources :user_recipes, only: [:create]
+  delete "/user_recipes", to: "user_recipes#destroy" # hand-rolled to avoid needing an ID
+
 end

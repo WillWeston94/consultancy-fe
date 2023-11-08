@@ -1,0 +1,54 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://localhost:3000/api/v1/search?q=Nigerian%20Snail%20Stew
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.11
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - '0'
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Type:
+      - application/json; charset=utf-8
+      Vary:
+      - Origin
+      Etag:
+      - W/"8dfba814c3c3c1467c5afaa2b5a4de8e"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 7d8e618a-677e-46cc-b2de-32080ae28507
+      X-Runtime:
+      - '0.657035'
+      Server-Timing:
+      - start_processing.action_controller;dur=0.05, process_action.action_controller;dur=654.73
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"data":[{"id":"716381","type":"searched_recipe","attributes":{"name":"Nigerian
+        Snail Stew","img_src":"https://spoonacular.com/recipeImages/716381-312x231.jpg"}}]}'
+  recorded_at: Tue, 07 Nov 2023 18:20:42 GMT
+recorded_with: VCR 6.2.0

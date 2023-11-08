@@ -35,15 +35,15 @@ http_interactions:
       Vary:
       - Origin
       Etag:
-      - W/"6120363b80cff39b711f1e4c58c5f3cc"
+      - W/"9cbb834a34e85a144643afb69fc8e2b1"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - e431eebb-2b1b-4938-92b7-64d527ca7478
+      - e7f14b7d-b5fe-4c0c-b252-0dcda2a8e20d
       X-Runtime:
-      - '0.599666'
+      - '0.551037'
       Server-Timing:
-      - start_processing.action_controller;dur=0.06, process_action.action_controller;dur=595.83
+      - start_processing.action_controller;dur=0.07, process_action.action_controller;dur=548.17
       Transfer-Encoding:
       - chunked
     body:
@@ -58,6 +58,96 @@ http_interactions:
         Brown Betty","img_src":"https://spoonacular.com/recipeImages/632481-312x231.jpg"}},{"id":"632575","type":"searched_recipe","attributes":{"name":"Apple
         Pie Smoothie","img_src":"https://spoonacular.com/recipeImages/632575-312x231.jpg"}},{"id":"632598","type":"searched_recipe","attributes":{"name":"Apple
         spinach soup","img_src":"https://spoonacular.com/recipeImages/632598-312x231.jpg"}},{"id":"632577","type":"searched_recipe","attributes":{"name":"Apple
-        Pie Pancakes","img_src":"https://spoonacular.com/recipeImages/632577-312x231.jpg"}}]}'
-  recorded_at: Fri, 03 Nov 2023 01:02:16 GMT
+        Pie Pancakes","img_src":"https://spoonacular.com/recipeImages/632577-312x231.jpg"}},{"id":"632631","type":"searched_recipe","attributes":{"name":"Apple-Spinach
+        Salad","img_src":"https://spoonacular.com/recipeImages/632631-312x231.jpg"}},{"id":"632501","type":"searched_recipe","attributes":{"name":"Apple
+        Cinnamon Cake","img_src":"https://spoonacular.com/recipeImages/632501-312x231.jpg"}},{"id":"632609","type":"searched_recipe","attributes":{"name":"Apple
+        Walnut Squares","img_src":"https://spoonacular.com/recipeImages/632609-312x231.jpg"}},{"id":"632594","type":"searched_recipe","attributes":{"name":"Apple
+        Sausage Galette","img_src":"https://spoonacular.com/recipeImages/632594-312x231.png"}},{"id":"632471","type":"searched_recipe","attributes":{"name":"Apple
+        and Walnut Cake","img_src":"https://spoonacular.com/recipeImages/632471-312x231.jpg"}},{"id":"632611","type":"searched_recipe","attributes":{"name":"Apple
+        Walnut Brownies","img_src":"https://spoonacular.com/recipeImages/632611-312x231.jpg"}},{"id":"632574","type":"searched_recipe","attributes":{"name":"Apple
+        Persimmon Sauce","img_src":"https://spoonacular.com/recipeImages/632574-312x231.jpg"}},{"id":"1096183","type":"searched_recipe","attributes":{"name":"Apple-Currant
+        Granola","img_src":"https://spoonacular.com/recipeImages/1096183-312x231.jpg"}},{"id":"1096246","type":"searched_recipe","attributes":{"name":"Apple
+        Cinnamon Quiche","img_src":"https://spoonacular.com/recipeImages/1096246-312x231.jpg"}},{"id":"73420","type":"searched_recipe","attributes":{"name":"Apple
+        Or Peach Strudel","img_src":"https://spoonacular.com/recipeImages/73420-312x231.jpg"}},{"id":"632493","type":"searched_recipe","attributes":{"name":"Apple
+        Cheddar Palmiers","img_src":"https://spoonacular.com/recipeImages/632493-312x231.jpg"}},{"id":"1095958","type":"searched_recipe","attributes":{"name":"Apple
+        Rose Puff Dessert","img_src":"https://spoonacular.com/recipeImages/1095958-312x231.jpg"}},{"id":"632590","type":"searched_recipe","attributes":{"name":"Apple
+        Roasted Pork Loin","img_src":"https://spoonacular.com/recipeImages/632590-312x231.jpg"}},{"id":"157103","type":"searched_recipe","attributes":{"name":"Apple
+        Cinnamon Blondies","img_src":"https://spoonacular.com/recipeImages/157103-312x231.jpg"}},{"id":"632580","type":"searched_recipe","attributes":{"name":"Apple
+        Pie, Vermont Style","img_src":"https://spoonacular.com/recipeImages/632580-312x231.jpg"}},{"id":"632622","type":"searched_recipe","attributes":{"name":"Apple-
+        Pomegranate Crisp","img_src":"https://spoonacular.com/recipeImages/632622-312x231.jpg"}},{"id":"632463","type":"searched_recipe","attributes":{"name":"Apple
+        and Potato Fritatta","img_src":"https://spoonacular.com/recipeImages/632463-312x231.jpg"}},{"id":"632504","type":"searched_recipe","attributes":{"name":"Apple
+        Cinnamon Cookie Bars","img_src":"https://spoonacular.com/recipeImages/632504-312x231.jpg"}},{"id":"632623","type":"searched_recipe","attributes":{"name":"Apple-Infused
+        Caramel Corn","img_src":"https://spoonacular.com/recipeImages/632623-312x231.jpg"}},{"id":"632570","type":"searched_recipe","attributes":{"name":"Apple
+        Pie Honey Wheat Scones","img_src":"https://spoonacular.com/recipeImages/632570-312x231.jpg"}},{"id":"1095759","type":"searched_recipe","attributes":{"name":"Apple
+        Cider Honey Jack Martini","img_src":"https://spoonacular.com/recipeImages/1095759-312x231.jpg"}},{"id":"632505","type":"searched_recipe","attributes":{"name":"Apple
+        Cinnamon Mascarpone Tart","img_src":"https://spoonacular.com/recipeImages/632505-312x231.jpg"}},{"id":"632539","type":"searched_recipe","attributes":{"name":"Apple
+        Dumplings In Fanta Sauce","img_src":"https://spoonacular.com/recipeImages/632539-312x231.jpg"}},{"id":"632549","type":"searched_recipe","attributes":{"name":"Apple
+        Graham Cracker Coffee Cake","img_src":"https://spoonacular.com/recipeImages/632549-312x231.jpg"}},{"id":"632525","type":"searched_recipe","attributes":{"name":"Apple
+        Custard Pie With Oatmeal Crust","img_src":"https://spoonacular.com/recipeImages/632525-312x231.jpg"}},{"id":"632569","type":"searched_recipe","attributes":{"name":"Apple
+        Pears and Dates Chutney / Compote","img_src":"https://spoonacular.com/recipeImages/632569-312x231.jpg"}},{"id":"632487","type":"searched_recipe","attributes":{"name":"Apple
+        Cake With Caramel Brown Sugar Glaze","img_src":"https://spoonacular.com/recipeImages/632487-312x231.jpg"}},{"id":"1697613","type":"searched_recipe","attributes":{"name":"Apple
+        Cider Muffins with Cinnamon Streusel","img_src":"https://spoonacular.com/recipeImages/1697613-312x231.jpg"}},{"id":"632625","type":"searched_recipe","attributes":{"name":"Apple-Cheesecake
+        Tart with Salted Caramel Glaze","img_src":"https://spoonacular.com/recipeImages/632625-312x231.jpg"}},{"id":"632502","type":"searched_recipe","attributes":{"name":"Apple
+        Cheddar Turkey Burgers With Chipotle Yogurt Sauce","img_src":"https://spoonacular.com/recipeImages/632502-312x231.jpg"}},{"id":"656617","type":"searched_recipe","attributes":{"name":"Pom-Apple
+        Cranberry Relish","img_src":"https://spoonacular.com/recipeImages/656617-312x231.jpg"}},{"id":"642608","type":"searched_recipe","attributes":{"name":"Fast
+        Apple pie","img_src":"https://spoonacular.com/recipeImages/642608-312x231.jpg"}},{"id":"642548","type":"searched_recipe","attributes":{"name":"Fall
+        Apple Yeast Bread","img_src":"https://spoonacular.com/recipeImages/642548-312x231.jpg"}},{"id":"633419","type":"searched_recipe","attributes":{"name":"Baked
+        Apple","img_src":"https://spoonacular.com/recipeImages/633419-312x231.jpg"}},{"id":"633428","type":"searched_recipe","attributes":{"name":"Baked
+        Apple Pancake","img_src":"https://spoonacular.com/recipeImages/633428-312x231.jpg"}},{"id":"657563","type":"searched_recipe","attributes":{"name":"Quick
+        Apple Ginger Pie","img_src":"https://spoonacular.com/recipeImages/657563-312x231.jpg"}},{"id":"674272","type":"searched_recipe","attributes":{"name":"Grand
+        Apple and Cinnamon Biscuits","img_src":"https://spoonacular.com/recipeImages/674272-312x231.jpg"}},{"id":"1697823","type":"searched_recipe","attributes":{"name":"Bacon-Apple-Pecan
+        Stuffed French Toast","img_src":"https://spoonacular.com/recipeImages/1697823-312x231.jpg"}},{"id":"664386","type":"searched_recipe","attributes":{"name":"Vegan
+        Apple Chestnut Corn Bread Stuffing","img_src":"https://spoonacular.com/recipeImages/664386-312x231.jpg"}},{"id":"633089","type":"searched_recipe","attributes":{"name":"Autumn
+        Apple Pie","img_src":"https://spoonacular.com/recipeImages/633089-312x231.jpg"}},{"id":"644730","type":"searched_recipe","attributes":{"name":"Glazed
+        Apple Tart","img_src":"https://spoonacular.com/recipeImages/644730-312x231.jpg"}},{"id":"660932","type":"searched_recipe","attributes":{"name":"Spiced
+        Apple Cider","img_src":"https://spoonacular.com/recipeImages/660932-312x231.jpg"}},{"id":"644729","type":"searched_recipe","attributes":{"name":"Glazed
+        Apple Cider Doughnuts","img_src":"https://spoonacular.com/recipeImages/644729-312x231.jpg"}},{"id":"640588","type":"searched_recipe","attributes":{"name":"Creamy
+        Apple Cinnamon Pockets","img_src":"https://spoonacular.com/recipeImages/640588-312x231.jpg"}},{"id":"633086","type":"searched_recipe","attributes":{"name":"Autumn
+        Apple Cake With Caramel Glaze","img_src":"https://spoonacular.com/recipeImages/633086-312x231.jpg"}},{"id":"637348","type":"searched_recipe","attributes":{"name":"Celery
+        Apple Risotto With Crispy Pancetta","img_src":"https://spoonacular.com/recipeImages/637348-312x231.jpg"}},{"id":"635907","type":"searched_recipe","attributes":{"name":"Brandy-Apple
+        Mini Pies With Cornmeal Crust","img_src":"https://spoonacular.com/recipeImages/635907-312x231.jpg"}},{"id":"636974","type":"searched_recipe","attributes":{"name":"Caramel
+        Apple Cake","img_src":"https://spoonacular.com/recipeImages/636974-312x231.jpg"}},{"id":"1096069","type":"searched_recipe","attributes":{"name":"Classic
+        Apple Sauce","img_src":"https://spoonacular.com/recipeImages/1096069-312x231.jpg"}},{"id":"636975","type":"searched_recipe","attributes":{"name":"Caramel
+        Apple Bread Bake","img_src":"https://spoonacular.com/recipeImages/636975-312x231.jpg"}},{"id":"636989","type":"searched_recipe","attributes":{"name":"Caramel
+        Apple-Brownie Cheesecake","img_src":"https://spoonacular.com/recipeImages/636989-312x231.jpg"}},{"id":"655740","type":"searched_recipe","attributes":{"name":"Classic
+        Apple Pie with Perfect Crust","img_src":"https://spoonacular.com/recipeImages/655740-312x231.jpg"}},{"id":"641435","type":"searched_recipe","attributes":{"name":"Dessert
+        Apple Rings With Cinnamon Cream Syrup","img_src":"https://spoonacular.com/recipeImages/641435-312x231.jpg"}},{"id":"658486","type":"searched_recipe","attributes":{"name":"Roasted
+        Apple and Butternut Galette With Mustard-Maple Glaze","img_src":"https://spoonacular.com/recipeImages/658486-312x231.jpg"}},{"id":"656701","type":"searched_recipe","attributes":{"name":"Pork
+        and Apple Stew","img_src":"https://spoonacular.com/recipeImages/656701-312x231.jpg"}},{"id":"1095900","type":"searched_recipe","attributes":{"name":"Cinnamon
+        Apple Chips","img_src":"https://spoonacular.com/recipeImages/1095900-312x231.jpg"}},{"id":"633059","type":"searched_recipe","attributes":{"name":"Austrian
+        Apple Twists","img_src":"https://spoonacular.com/recipeImages/633059-312x231.jpg"}},{"id":"636835","type":"searched_recipe","attributes":{"name":"Canadian
+        apple butter","img_src":"https://spoonacular.com/recipeImages/636835-312x231.jpg"}},{"id":"655392","type":"searched_recipe","attributes":{"name":"Pear
+        and Apple Crumble","img_src":"https://spoonacular.com/recipeImages/655392-312x231.jpg"}},{"id":"646906","type":"searched_recipe","attributes":{"name":"Homemade
+        Apple Almond Granola Bars","img_src":"https://spoonacular.com/recipeImages/646906-312x231.jpg"}},{"id":"648864","type":"searched_recipe","attributes":{"name":"Kick
+        Butt Apple Pie","img_src":"https://spoonacular.com/recipeImages/648864-312x231.jpg"}},{"id":"638820","type":"searched_recipe","attributes":{"name":"Chocolate
+        Apple Cake","img_src":"https://spoonacular.com/recipeImages/638820-312x231.jpg"}},{"id":"645152","type":"searched_recipe","attributes":{"name":"Grandma''s
+        Apple Crisp","img_src":"https://spoonacular.com/recipeImages/645152-312x231.jpg"}},{"id":"643119","type":"searched_recipe","attributes":{"name":"Flourless
+        Apple Macadamia Cookies","img_src":"https://spoonacular.com/recipeImages/643119-312x231.jpg"}},{"id":"654429","type":"searched_recipe","attributes":{"name":"Pan
+        Seared Apple Almond Cake","img_src":"https://spoonacular.com/recipeImages/654429-312x231.jpg"}},{"id":"632449","type":"searched_recipe","attributes":{"name":"Appetizing
+        Apple and Almond Soup","img_src":"https://spoonacular.com/recipeImages/632449-312x231.jpg"}},{"id":"662175","type":"searched_recipe","attributes":{"name":"Sugar-Free
+        Apple and Cinnamon Jam","img_src":"https://spoonacular.com/recipeImages/662175-312x231.jpg"}},{"id":"663748","type":"searched_recipe","attributes":{"name":"Traditional
+        Apple Tart","img_src":"https://spoonacular.com/recipeImages/663748-312x231.jpg"}},{"id":"644641","type":"searched_recipe","attributes":{"name":"Ginger
+        Snap Apple Crisp","img_src":"https://spoonacular.com/recipeImages/644641-312x231.jpg"}},{"id":"644789","type":"searched_recipe","attributes":{"name":"Gluten
+        Free Apple Strudel","img_src":"https://spoonacular.com/recipeImages/644789-312x231.jpg"}},{"id":"665269","type":"searched_recipe","attributes":{"name":"Whole
+        Wheat Apple Orange Muffins","img_src":"https://spoonacular.com/recipeImages/665269-312x231.jpg"}},{"id":"673463","type":"searched_recipe","attributes":{"name":"Slow
+        Cooker Apple Pork Tenderloin","img_src":"https://spoonacular.com/recipeImages/673463-312x231.jpg"}},{"id":"651975","type":"searched_recipe","attributes":{"name":"Mini
+        Spiced Apple Tarts with Chocolate","img_src":"https://spoonacular.com/recipeImages/651975-312x231.jpg"}},{"id":"1697771","type":"searched_recipe","attributes":{"name":"World''s
+        Best Apple Pie","img_src":"https://spoonacular.com/recipeImages/1697771-312x231.jpg"}},{"id":"652985","type":"searched_recipe","attributes":{"name":"Neah''s
+        Fresh Apple Cake","img_src":"https://spoonacular.com/recipeImages/652985-312x231.jpg"}},{"id":"1697555","type":"searched_recipe","attributes":{"name":"Mom''s
+        Jewish Apple Cake","img_src":"https://spoonacular.com/recipeImages/1697555-312x231.jpg"}},{"id":"651773","type":"searched_recipe","attributes":{"name":"Meyer
+        Lemony Apple Crumble","img_src":"https://spoonacular.com/recipeImages/651773-312x231.jpg"}},{"id":"650939","type":"searched_recipe","attributes":{"name":"Maple-Glazed
+        Apple Cookies","img_src":"https://spoonacular.com/recipeImages/650939-312x231.jpg"}},{"id":"775666","type":"searched_recipe","attributes":{"name":"Easy
+        Homemade Apple Fritters","img_src":"https://spoonacular.com/recipeImages/775666-312x231.jpg"}},{"id":"1095799","type":"searched_recipe","attributes":{"name":"Juicy
+        pear and apple cake","img_src":"https://spoonacular.com/recipeImages/1095799-312x231.jpg"}},{"id":"632660","type":"searched_recipe","attributes":{"name":"Apricot
+        Glazed Apple Tart","img_src":"https://spoonacular.com/recipeImages/632660-312x231.jpg"}},{"id":"633547","type":"searched_recipe","attributes":{"name":"Baked
+        Cinnamon Apple Slices","img_src":"https://spoonacular.com/recipeImages/633547-312x231.jpg"}},{"id":"633548","type":"searched_recipe","attributes":{"name":"Baked
+        Cinnamon Apple Wedges","img_src":"https://spoonacular.com/recipeImages/633548-312x231.jpg"}},{"id":"665672","type":"searched_recipe","attributes":{"name":"Zomppa''s
+        French Apple Tart","img_src":"https://spoonacular.com/recipeImages/665672-312x231.jpg"}},{"id":"647531","type":"searched_recipe","attributes":{"name":"Hot
+        Spiced Cran-Apple Cider","img_src":"https://spoonacular.com/recipeImages/647531-312x231.jpg"}},{"id":"652976","type":"searched_recipe","attributes":{"name":"Naturally
+        Sweet Apple Turnovers","img_src":"https://spoonacular.com/recipeImages/652976-312x231.jpg"}},{"id":"1697559","type":"searched_recipe","attributes":{"name":"Pork
+        Chops with Apple - a taste of fall in 30 minutes","img_src":"https://spoonacular.com/recipeImages/1697559-312x231.jpg"}},{"id":"642673","type":"searched_recipe","attributes":{"name":"Fenugreek
+        Raisin Apple Curry","img_src":"https://spoonacular.com/recipeImages/642673-312x231.jpg"}},{"id":"655212","type":"searched_recipe","attributes":{"name":"Peanut
+        Butter and Apple Oatmeal Breakfast Bars","img_src":"https://spoonacular.com/recipeImages/655212-312x231.jpg"}},{"id":"665040","type":"searched_recipe","attributes":{"name":"Watermelon,
+        Kiwi, Apple and Frozen Banana Smoothie","img_src":"https://spoonacular.com/recipeImages/665040-312x231.jpg"}}]}'
+  recorded_at: Mon, 06 Nov 2023 22:58:21 GMT
 recorded_with: VCR 6.2.0
