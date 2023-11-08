@@ -14,7 +14,13 @@ class Users::OmniauthCallbacksController < Devise::OmniauthCallbacksController
     if user.present?
       sign_out_all_scopes # devise helper method to sign out any existing user across all scopes "just in case"
       flash[:success] = t "devise.omniauth_callbacks.success", kind: "Google"
-      sign_in_and_redirect user, event: :authentication
+      sign_in user, event: :authentication
+
+      if user.two_factor_verified?
+        redirect_to root_path
+      else
+        redirect_to show_verification_form_path
+      end
     else
       flash[:alert] = t "devise.omniauth_callbacks.failure", kind: "Google", reason: "#{auth.info.email} is not authorized."
       redirect_to new_user_session_path

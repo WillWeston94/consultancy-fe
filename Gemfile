@@ -54,7 +54,8 @@ gem 'omniauth'
 gem 'omniauth-google-oauth2'
 gem 'omniauth-rails_csrf_protection', '~> 1.0'
 
-
+gem 'twilio-ruby'
+gem "phony_rails"
 # Use Active Storage variants [https://guides.rubyonrails.org/active_storage_overview.html#transforming-images]
 # gem "image_processing", "~> 1.2"
 
@@ -67,7 +68,11 @@ group :development, :test do
   gem 'webmock'
   gem 'vcr'
   gem 'shoulda-matchers'
+
+
+
   gem 'launchy'
+
 end
 
 group :development do
@@ -83,5 +88,7 @@ end
 
 group :test do
   gem 'simplecov'
+  gem 'factory_bot_rails'
+  gem 'faker'
 end
 
