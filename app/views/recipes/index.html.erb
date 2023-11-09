@@ -147,7 +147,7 @@
   <script src="js/script.js"></script></body>
 
 <div style="margin-top: 40px;">
-  <div class = "container">
+  <div class = "container d-flex flex-wrap justify-content-center">
     <div class = "row" >
       <% @recipe_facade.recipes.each do |recipe| %>
         <div class ="col-lg-4 col-md-6 col-sm-12">
@@ -156,7 +156,7 @@
               <%= link_to recipe_path(recipe.id) do %>
                 <img src="<%= recipe.img_src %>" alt="<%= recipe.name %>" class="card-img-top">
               <% end %>
-              <div class="card-body">
+              <div class="card-body d-flex flex-column justify-content-center align-items-center">
                 <h5 class="card-title"><%= link_to recipe.name, recipe_path(recipe.id) %></h5>
               </div>
             </div>
