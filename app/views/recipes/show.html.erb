@@ -2,7 +2,7 @@
 <header class="navigation fixed-top">
   <div class="container">
     <nav class="navbar navbar-expand-lg navbar-white">
-      <a class="navbar-brand order-1" href="index.html">
+      <a class="navbar-brand order-1" href="/recipes">
         <h2>KindKitchen</h2>
       </a>
       <div class="collapse navbar-collapse text-center order-lg-2 order-3" id="navigation">
@@ -44,19 +44,27 @@
 </header>
 <!-- /navigation -->
 <div class="banner text-center">
-<br><%= @recipe_facade.recipe.name %>
-<% if current_user %>
-  <br><%= button_to "Save Recipe", user_recipes_path, method: :post, data: {turbo: false}, params: {user_id: current_user.id, recipe_id: @recipe_facade.search} %>
-<% end %>
+<br><h1><%= @recipe_facade.recipe.name %></h1>
+<div class="d-flex justify-content-center">
+  <% if current_user %>
+    <br><%= button_to "Save Recipe", user_recipes_path, method: :post, data: {turbo: false}, params: {user_id: current_user.id, recipe_id: @recipe_facade.search} %>
+  <% end %>
+</div>
 <br><img src="<%= @recipe_facade.recipe.img_src %>" alt="<%= @recipe_facade.recipe.name %>">
-<br>Servings: <%= @recipe_facade.recipe.servings %>
-<br>Prep Time: <%= @recipe_facade.recipe.cooking_time %> Minutes
-<br>Ingredients: <% @recipe_facade.recipe.ingredients.each do |ingredient| %>
-                    <li><%= ingredient %></li>
+<br><b>Servings</b>: <%= @recipe_facade.recipe.servings %>
+<br><b>Prep Time</b>: <%= @recipe_facade.recipe.cooking_time %> Minutes
+<br>
+<br><b><u>Ingredients</u></b>
+<% @recipe_facade.recipe.ingredients.each do |ingredient| %>
+                    <br><%= ingredient %>
                     <% end %>
-<br>Instructions: <% @recipe_facade.recipe.instructions.each do |instruction| %>
+                    <br>
+<br><b><u>Instructions</u></b>
+<div class="text-left">
+<% @recipe_facade.recipe.instructions.each do |instruction| %>
                     <% instruction.each do |number, step| %>
-                      <br><%= number %>. <%= step %>
+                      <br><b><%= number %>)</b> <%= step %>
                     <% end %>
                   <% end %>
+  </div>
 </div>

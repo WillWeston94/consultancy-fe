@@ -10,7 +10,6 @@ Kind Kitchen caters to individuals with specific dietary needs, offering curated
 
 Recipe Suggestions: Find recipes by keyword, ingredients.
 Personalize Your Searches: Add dietary restrictions and preferences to guide your recipe searches.
-Get Substitutions: Don't like something? Get a personalized substitute recommendation!
 
 ## Getting Started
 

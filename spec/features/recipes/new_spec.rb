@@ -3,7 +3,6 @@ require "rails_helper"
 RSpec.describe "New Recipe Page", type: :feature do
     xit "can create a new recipe" do
     visit "/recipes/new"
-    # binding.pry
     fill_in :title, with: "Chicken Parmesan"
     fill_in :servings, with: 4
     fill_in :prep_time, with: 20
