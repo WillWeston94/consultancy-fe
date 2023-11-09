@@ -39,16 +39,85 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 7d8e618a-677e-46cc-b2de-32080ae28507
+      - c3bafff5-3220-4070-9752-0f7be2a80eab
       X-Runtime:
-      - '0.657035'
+      - '0.827955'
       Server-Timing:
-      - start_processing.action_controller;dur=0.05, process_action.action_controller;dur=654.73
+      - sql.active_record;dur=22.03, start_processing.action_controller;dur=0.06,
+        process_action.action_controller;dur=775.16
       Transfer-Encoding:
       - chunked
     body:
       encoding: UTF-8
       string: '{"data":[{"id":"716381","type":"searched_recipe","attributes":{"name":"Nigerian
         Snail Stew","img_src":"https://spoonacular.com/recipeImages/716381-312x231.jpg"}}]}'
-  recorded_at: Tue, 07 Nov 2023 18:20:42 GMT
+  recorded_at: Thu, 09 Nov 2023 16:28:02 GMT
+- request:
+    method: get
+    uri: http://localhost:3000/api/v1/search/716381
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.11
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - '0'
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Type:
+      - application/json; charset=utf-8
+      Vary:
+      - Origin
+      Etag:
+      - W/"7e18098266bf5106b2753f7da1cf208b"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 3657e629-9f89-4b14-98ff-95670a7975c7
+      X-Runtime:
+      - '0.612634'
+      Server-Timing:
+      - start_processing.action_controller;dur=0.08, process_action.action_controller;dur=608.49
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"716381","type":"recipe_details","attributes":{"name":"Nigerian
+        Snail Stew","img_src":"https://spoonacular.com/recipeImages/716381-556x370.jpg","servings":1,"readyInMinutes":45,"servingSize_grams":1251,"instructions":[{"1":"In
+        a bowl, wash the snails with lime and salt till all the slime is gone."},{"2":"Place
+        the snail in a pot with the chili powder, seasoning cubes, chopped garlic,
+        1/2 of the onion(chopped) and a pinch of salt and bring to boil for about
+        15-18 minutes.In a separate pot, place the tomatoes, bell pepper, scotch bonnet
+        peppers, crush with a wooden spoon till some of the juices come out and bring
+        to boil till they are all soft on low heat. (This helps to dry up some of
+        the extra water from the tomatoes)In a pot, pour in your oil, cut your onions
+        in rings and fry in the hot oil on medium heat."},{"3":"Pour in your tomato-pepper
+        mix and allow to fry for about 8-10 minutes on low heat."},{"4":"Pour in the
+        left-over stock from the snail and allow to cook for 5 more minutes on medium
+        heat."},{"5":"Add your seasoning cubes and taste for salt."},{"6":"Add your
+        snails and stir in and allow to stew for 2-4 minutes more on medium heat."},{"7":"Serve
+        with Rice, Pasta, Plantain, Yams or Potatoes."}],"ingredients":["1 teaspoon
+        of chili powder","2 cloves of garlic","Seasoning Cubes","3 Limes","1 Red bell
+        pepper","1 large Red onion","2 tablespoons of Salt","4 scotch bonnet peppers","4
+        scotch bonnet peppers","8 snails","5 Large tomatoes","1 cooking spoon of Vegetable
+        Oil"]}}}'
+  recorded_at: Thu, 09 Nov 2023 16:28:03 GMT
 recorded_with: VCR 6.2.0
