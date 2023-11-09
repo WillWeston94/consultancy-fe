@@ -454,12 +454,4 @@ RSpec.describe "Recipes Advanced Search Index Page" do
     expect(page).to have_content("Egg Salad Wrap")
     expect(page).to have_content("Bing's Banana Cake")
   end
-
-  xit "sends the user to the show page when clicking on the image" do
-  end
-
-  xit "sends the user to the show page when clicking on the link" do
-
-
-  end
 end

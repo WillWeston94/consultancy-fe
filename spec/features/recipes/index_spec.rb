@@ -50,20 +50,4 @@ RSpec.describe "Recipes Index Page" do
 
     expect(current_path).to eq(recipes_advanced_search_index_path)
   end
-
-  xit "sends the user to the show page when clicking on the image" do
-  end
-
-  xit "sends the user to the show page when clicking on the text", :vcr do
-    visit "/"
-
-    fill_in :search, with: "Nigerian Snail Stew"
-    click_button "Search"
-
-    within(".recipe-card .card-title a") do
-      click
-    end
-  
-    expect(current_path).to eq(recipe_path)
-  end
 end
