@@ -1,7 +1,6 @@
 class RecipeDatabaseService
   def conn
-    # Faraday.new(url: "https://consultancy-be-428b342c7047.herokuapp.com")
-    Faraday.new(url: "http://localhost:3000") #enable for local
+    Faraday.new(url: "https://consultancy-be-428b342c7047.herokuapp.com")
   end
 
   def get_url(url)
