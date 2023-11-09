@@ -38,4 +38,11 @@ RSpec.describe "Dashboard", type: :feature do
       expect(page).to_not have_content("Tuna Mexi Melts")
     end
   end
+
+  it "redirects to the root path if a user is not logged in" do
+    visit "/dashboard"
+
+    expect(page).to have_current_path(root_path)
+    expect(page).to have_content("Please log in to view your dashboard!")
+  end
 end
