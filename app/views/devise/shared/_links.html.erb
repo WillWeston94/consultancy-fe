@@ -21,7 +21,7 @@
 <%- if devise_mapping.omniauthable? %>
   <%- resource_class.omniauth_providers.each do |provider| %>
     <%= form_for "Login", url: omniauth_authorize_path(resource_name, provider), method: :post, data: {turbo: false} do |form| %>
-      <%= form.submit "Login", type: "image", src: url_for("/assets/images/web_light_sq_SI@1x.png"), method: :post %>
+      <%= form.submit "Login", type: "image", src: url_for("/assets/web_light_sq_SI@1x.png"), method: :post %>
     <% end %>
   <% end %>
 <% end %>
