@@ -88,7 +88,6 @@
           <%= form_with url: recipes_advanced_search_index_path, method: :get, local: true, data: {turbo: false}, class: "advanced-search-form"  do |f| %>
             <%= f.text_field :advanced_search, placeholder: "Search by Ingredients..." %>
             <%= f.submit "Advanced Search" %>
-            </div>
             <br><ul class="list-inline widget-list-inline">
             <li class="list-inline-item"><%= check_box_tag :breakfast %> Breakfast</li>
             <li class="list-inline-item"><%= check_box_tag :main_course %> Main Course</li>
@@ -123,6 +122,7 @@
             <li class="list-inline-item"><%= check_box_tag :wheat %> Wheat Free</li>
           <% end %>
         </ul>
+        </div>
       </div>
     </div>
   </div>
