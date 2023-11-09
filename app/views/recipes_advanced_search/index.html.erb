@@ -36,7 +36,7 @@
 <header class="navigation fixed-top">
   <div class="container">
     <nav class="navbar navbar-expand-lg navbar-white">
-      <a class="navbar-brand order-1" href="index.html">
+      <a class="navbar-brand order-1" href="/recipes">
         <h2>KindKitchen</h2>
       </a>
       <div class="collapse navbar-collapse text-center order-lg-2 order-3" id="navigation">
@@ -84,58 +84,44 @@
     <div class="row">
       <div class="col-lg-9 mx-auto">
         <h1 class="mb-5">What Would You <br> Like To Cook Today?</h1>
+        <div class="d-flex justify-content-center">
           <%= form_with url: recipes_advanced_search_index_path, method: :get, local: true, data: {turbo: false}, class: "advanced-search-form"  do |f| %>
             <%= f.text_field :advanced_search, placeholder: "Search by Ingredients..." %>
             <%= f.submit "Advanced Search" %>
-            <%= check_box_tag :breakfast %> Breakfast
-            <%= check_box_tag :main_course %> Main Course
-            <%= check_box_tag :side_dish %> Side Dish 
-            <%= check_box_tag :dessert %> Dessert
-            <%= check_box_tag :appetizer %> Appetizer
-            <%= check_box_tag :salad %> Salad
-            <%= check_box_tag :soup %> Soup 
-            <%= check_box_tag :beverage %> Beverage
-            <%= check_box_tag :sauce %> Sauce
-            <%= check_box_tag :marinade %> Marinade
-            <%= check_box_tag :snack %> Snack
-            <%= check_box_tag :ketogenic %> Ketogenic
-            <%= check_box_tag :vegetarian %> Vegetarian
-            <%= check_box_tag :vegan %> Vegan
-            <%= check_box_tag :pescetarian %> Pescetarian
-            <%= check_box_tag :paleo %> Paleo
-            <%= check_box_tag :primal %> Primal
-            <%= check_box_tag :low_fodmap %> Low FODMAP
-            <%= check_box_tag :whole30 %> Whole30
-            <%= check_box_tag :dairy %> Dairy Free
-            <%= check_box_tag :egg %> Egg Free
-            <%= check_box_tag :gluten %> Gluten Free
-            <%= check_box_tag :grain %> Grain Free
-            <%= check_box_tag :peanut %> Peanut Free
-            <%= check_box_tag :seafood %> Seafood Free
-            <%= check_box_tag :sesame %> Sesame Free
-            <%= check_box_tag :shellfish %> Shellfish Free
-            <%= check_box_tag :soy %> Soy Free
-            <%= check_box_tag :sulfite %> Sulfite Free
-            <%= check_box_tag :tree_nut %> Tree Nut Free
-            <%= check_box_tag :wheat %> Wheat Free
+            </div>
+            <br><ul class="list-inline widget-list-inline">
+            <li class="list-inline-item"><%= check_box_tag :breakfast %> Breakfast</li>
+            <li class="list-inline-item"><%= check_box_tag :main_course %> Main Course</li>
+            <li class="list-inline-item"><%= check_box_tag :side_dish %> Side Dish</li> 
+            <li class="list-inline-item"><%= check_box_tag :dessert %> Dessert</li>
+            <li class="list-inline-item"><%= check_box_tag :appetizer %> Appetizer</li>
+            <li class="list-inline-item"><%= check_box_tag :salad %> Salad</li>
+            <li class="list-inline-item"><%= check_box_tag :soup %> Soup </li>
+            <li class="list-inline-item"><%= check_box_tag :beverage %> Beverage</li>
+            <li class="list-inline-item"><%= check_box_tag :sauce %> Sauce</li>
+            <li class="list-inline-item"><%= check_box_tag :marinade %> Marinade</li>
+            <li class="list-inline-item"><%= check_box_tag :snack %> Snack</li>
+            <li class="list-inline-item"><%= check_box_tag :ketogenic %> Ketogenic</li>
+            <li class="list-inline-item"><%= check_box_tag :vegetarian %> Vegetarian</li>
+            <li class="list-inline-item"><%= check_box_tag :vegan %> Vegan</li>
+            <li class="list-inline-item"><%= check_box_tag :pescetarian %> Pescetarian</li>
+            <li class="list-inline-item"><%= check_box_tag :paleo %> Paleo</li>
+            <li class="list-inline-item"><%= check_box_tag :primal %> Primal</li>
+            <li class="list-inline-item"><%= check_box_tag :low_fodmap %> Low FODMAP</li>
+            <li class="list-inline-item"><%= check_box_tag :whole30 %> Whole30</li>
+            <li class="list-inline-item"><%= check_box_tag :dairy %> Dairy Free</li>
+            <li class="list-inline-item"><%= check_box_tag :egg %> Egg Free</li>
+            <li class="list-inline-item"><%= check_box_tag :gluten %> Gluten Free</li>
+            <li class="list-inline-item"><%= check_box_tag :grain %> Grain Free</li>
+            <li class="list-inline-item"><%= check_box_tag :peanut %> Peanut Free</li>
+            <li class="list-inline-item"><%= check_box_tag :seafood %> Seafood Free</li>
+            <li class="list-inline-item"><%= check_box_tag :sesame %> Sesame Free</li>
+            <li class="list-inline-item"><%= check_box_tag :shellfish %> Shellfish Free</li>
+            <li class="list-inline-item"><%= check_box_tag :soy %> Soy Free</li>
+            <li class="list-inline-item"><%= check_box_tag :sulfite %> Sulfite Free</li>
+            <li class="list-inline-item"><%= check_box_tag :tree_nut %> Tree Nut Free</li>
+            <li class="list-inline-item"><%= check_box_tag :wheat %> Wheat Free</li>
           <% end %>
-          
-        <br><ul class="list-inline widget-list-inline">
-          <li class="list-inline-item"><a href="tags.html">City</a></li>
-          <li class="list-inline-item"><a href="tags.html">Color</a></li>
-          <li class="list-inline-item"><a href="tags.html">Creative</a></li>
-          <li class="list-inline-item"><a href="tags.html">Decorate</a></li>
-          <li class="list-inline-item"><a href="tags.html">Demo</a></li>
-          <li class="list-inline-item"><a href="tags.html">Elements</a></li>
-          <li class="list-inline-item"><a href="tags.html">Fish</a></li>
-          <li class="list-inline-item"><a href="tags.html">Food</a></li>
-          <li class="list-inline-item"><a href="tags.html">Nice</a></li>
-          <li class="list-inline-item"><a href="tags.html">Recipe</a></li>
-          <li class="list-inline-item"><a href="tags.html">Season</a></li>
-          <li class="list-inline-item"><a href="tags.html">Taste</a></li>
-          <li class="list-inline-item"><a href="tags.html">Tasty</a></li>
-          <li class="list-inline-item"><a href="tags.html">Vlog</a></li>
-          <li class="list-inline-item"><a href="tags.html">Wow</a></li>
         </ul>
       </div>
     </div>
@@ -188,17 +174,6 @@
   </svg>
 </div>
 <!-- end of banner -->
-
-
-
-  <!-- JS Plugins -->
-  <script src="plugins/jQuery/jquery.min.js"></script>
-
-  <script src="plugins/bootstrap/bootstrap.min.js"></script>
-
-  <script src="plugins/slick/slick.min.js"></script>
-
-  <script src="plugins/instafeed/instafeed.min.js"></script>
 
 
   <!-- Main Script -->

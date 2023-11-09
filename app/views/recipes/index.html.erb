@@ -36,7 +36,7 @@
 <header class="navigation fixed-top">
   <div class="container">
     <nav class="navbar navbar-expand-lg navbar-white">
-      <a class="navbar-brand order-1" href="index.html">
+      <a class="navbar-brand order-1" href="/recipes">
         <h2>KindKitchen</h2>
       </a>
       <div class="collapse navbar-collapse text-center order-lg-2 order-3" id="navigation">
@@ -84,11 +84,13 @@
     <div class="row">
       <div class="col-lg-9 mx-auto">
         <h1 class="mb-5">What Would You <br> Like To Cook Today?</h1>
+        <div class="d-flex justify-content-center">
           <%= form_with url: recipes_path, method: :get, local: true, data: {turbo: false}, class: "default-search-form" do |f| %>
             <%= f.text_field :search, placeholder: "Search by Ingredients..." %>
             <%= f.submit "Search" %> 
           <% end %>
             <%= button_to "Advanced Search", recipes_advanced_search_index_path, method: :get, data: { turbo: false } %>
+          </div>
       </div>
     </div>
   </div>
@@ -140,18 +142,6 @@
   </svg>
 </div>
 <!-- end of banner -->
-
-
-
-  <!-- JS Plugins -->
-  <script src="plugins/jQuery/jquery.min.js"></script>
-
-  <script src="plugins/bootstrap/bootstrap.min.js"></script>
-
-  <script src="plugins/slick/slick.min.js"></script>
-
-  <script src="plugins/instafeed/instafeed.min.js"></script>
-
 
   <!-- Main Script -->
   <script src="js/script.js"></script></body>
