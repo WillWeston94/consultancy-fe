@@ -1,6 +1,7 @@
 class RecipeDatabaseService
   def conn
-    Faraday.new(url: "https://consultancy-be-428b342c7047.herokuapp.com")
+    # Faraday.new(url: "https://consultancy-be-428b342c7047.herokuapp.com")
+    Faraday.new(url: "http://localhost:3000") #enable for local
   end
 
   def get_url(url)
@@ -30,5 +31,9 @@ class RecipeDatabaseService
 
   def destroy_user_recipe(user_id, recipe_id)
     conn.delete("/api/v1/user_recipes?user_id=#{user_id}&recipe_id=#{recipe_id}")
+  end
+
+  def create_recipe(params)
+    conn.post("/api/v1/recipes", params.to_json)
   end
 end
