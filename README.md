@@ -1,46 +1,20 @@
-# README
+# Kind Kitchen - Project README
+# Front-End
 
-## KindKitchen - what is it?
+Link to [Kind Kitchen Website](https://consultancy-fe-b49461b80f89.herokuapp.com) <br/>
+Link to [Back-End Microservice](https://github.com/WillWeston94/consultancy-be)
 
-A dedicated platform for those seeking wellness-focused, dietary-sensitive recipes and meal planning.
-
-Kind Kitchen caters to individuals with specific dietary needs, offering curated recipes, meal plans, and wellness tips for a balanced lifestyle. Whether you're following a FODMAP diet, vegan, gluten-free, or just looking to eat healthier, Kind Kitchen has something for everyone.
-
-## Features
-
-Recipe Suggestions: Find recipes by keyword, ingredients.
-Personalize Your Searches: Add dietary restrictions and preferences to guide your recipe searches.
-
-## Getting Started
-
-1. Sign Up/Log In: Create a profile to save your preferences and get personalized suggestions.
-2. Set Dietary Preferences: Let us know about any dietary restrictions or preferences.
-3. Explore & Cook: Browse recipes, create meal plans, and enjoy!
-
-## Tech Stack
+## Setup
 - Ruby 3.2.2
-- Rails 7.0.8
-- PostgreSQL
+- Rails 7.0.7.2
+- [Faraday](https://github.com/lostisland/faraday) gem to interact with APIs
+- [SimpleCov](https://github.com/simplecov-ruby/simplecov) gem for code coverage tracking
+- [ShouldaMatchers](https://github.com/thoughtbot/shoulda-matchers) gem for testing assertions
+- [VCR](https://github.com/vcr/vcr) / [Webmock](https://github.com/bblimke/webmock) to stub HTTP requests in tests to simulate API interactions
+- [Omniouth](https://github.com/omniauth/omniauth) gem for Oauth
 
-## APIs
-- [Spoonacular](https://spoonacular.com/food-api)
-- ~Backend Link~
+## Project Description
 
-* System dependencies
+**KindKitchen ** is a dedicated platform for those seeking wellness-focused, dietary-sensitive recipes and meal planning.
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-## Contributing to KindKitchen
-  Trigger CircleCI pipeline by pushing to `main` branch
+This project has been deployed using [Heroku](https://id.heroku.com/login), and [Circle CI](https://circleci.com/) was used for Continuous Integration.
