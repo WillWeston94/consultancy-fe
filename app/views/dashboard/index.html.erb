@@ -51,7 +51,7 @@
   <div class="container d-flex flex-wrap justify-content-center">
     <% @facade.recipes.each do |recipe| %>
       <div class ="col-lg-4 col-md-6 col-sm-12">
-        <div class = "card h-100">
+        <div class = "card card-container">
           <div class = "card recipe-card">
             <%= link_to recipe_path(recipe.id) do %>
               <img src="<%= recipe.img_src %>" alt="<%= recipe.name %>" class="card-img-top">

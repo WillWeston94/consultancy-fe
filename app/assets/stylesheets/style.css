@@ -683,9 +683,16 @@ mark {
   background-color: #fff;
   transition: 0.2s ease;
 }
+
+.card-container {
+  /* margin-bottom: 20px; */
+  margin: 5px;
+}
 .card-body {
   padding: 25px;
+  min-height: 130px;
 }
+
 .card-img-sm {
   height: 85px;
   width: 85px;
