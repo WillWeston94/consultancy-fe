@@ -18,11 +18,14 @@
 
 
 .recipe-card {
-  border: 1px solid black;
-  background-color: paleturquoise;
-  height: 300 px;
+  border: 1px solid #4FD675;
+  background-color: rgb(195, 59, 0); 
 }
 
+.card-title a {
+  text-decoration: none;
+  color: white;
+}
 .card-title a:hover {
   text-decoration: underline;
 }
