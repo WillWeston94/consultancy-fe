@@ -32,6 +32,17 @@ The Spoonacular Natural Language search endpoint allows for a great deal of flex
 
 Users can register for free either by entering their email or by using OAuth. Once registered, users can save favorite recipes to their personal dashboard for easy access.
 
+## OAuth
+Kind Kitchen leverages a combination of Devise with Omniauth to handle a Google OAuth2.0 connection. OAuth2.0 is used for authentication from Google, allowing the registration and log-in of accounts not created through Kind Kitchen.<br><br>
+The app requires access to Full Name, UID, and other basic information such as profile pictures, but does NOT grant access to modify or edit any of those details.<br><br>
+To store keys, use the following layout in the credentials.yml.enc file:
+```
+google:
+  google_oauth_client_id: <key>
+  google_oauth_client_secret: <key>
+```
+
+If access to the app needs to be removed from testing purposes, permissions can be revoked through [Google's Third-party apps & services](https://myaccount.google.com/connections).
 
 ## Contributors
 
